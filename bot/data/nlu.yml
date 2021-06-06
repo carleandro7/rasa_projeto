@@ -1,370 +1,3732 @@
 version: "2.0"
 nlu:
+- intent: start
+  examples: |
+    - /start
+    - start
+
+- intent: help
+  examples: |
+    - /help
+    - help
+
+
 - intent: cumprimentar
   examples: |
-    - olá
-    - Ola
-    - Oi
+    - fala ff
+    - oi
+    - oii
+    - com licenca
+    - posso falar com você
+    - pode me tirar uma dúvida
+    - gostaria de tirar uma dúvida
+    - tranquilo
+    - blz
     - bom dia
     - boa tarde
     - boa noite
-- intent: despedir
-  examples: |
-    - tchau
-    - adeus
-    - flw
-    - Até mais, bot
-- intent: religiao
-  examples: |
-    - voce acredita em [deus](religiao)
-    - [deus](religiao) existe
-    - voce e [catolico protestante](religiao)
-    - voce tem [religiao](religiao)
-    - voce e [mussumano](religiao)
-    - [evengelico](religiao)
-    - voce e [crente](religiao)
-    - voce é [católico](religiao)
-    - voce é [ateu](religiao)
-    - você é espírita
-    - voce e espirita
-    - você é religioso
-    - qual é o seu deus?
-    - qual a sua [religião](religiao)?
-    - você acredita em alguma [religião](religiao)?
-- intent: time
-  examples: |
-    - qual o melhor time do brasil
-    - qual é o seu time
-    - quel e o seu time
-    - qual o seu time
-    - para qual time você torce
-    - para qual time voce torce
-    - para qual time vc torce
-    - que time voce torce
-    - que time vc torce
-    - quem vai ser o campeao brasileiro
-    - quem vai ser o campeao brasileiro nesse ano
-    - time do brasil
-    - melhor time
-- intent: piada
-  examples: |
-    - sabe alguma [piada](piada)
-    - voce sabe contar [piadas](piada)
-    - conhece alguma [piada](piada)
-    - [piada](piada)
-    - me conte uma [piada](piada)
-    - me conta uma piada
-    - conte-me uma [piada](piada)
-    - manda uma [piada](piada) ai
-    - me conta uma [coisa engraçada](piada)
-    - me fala uma piada
-    - me faz rir
-    - vc sabe fazer rir
-- intent: license
-  examples: |
-    - qual é a sua [licença](license)
-    - qual e a sua [licenca](license)
-    - voce e [licenciado](license)
-    - sua [licenca de software](license)
-    - posso copiar voce
-    - posso te clonar
-    - posso ter um bot como voce
-    - posso ver seu [codigo](license)
-    - voce e [opensource](license)
-    - você é um software livre
-    - voce e um [software livre](license)
-    - vc é um software livre
-    - [software livre](license)
-    - [licença](license)
-    - [licenca](license)
-- intent: onde_voce_mora
-  examples: |
-    - onde voce [mora](live)
-    - onde voce [vive](live)
-    - onde voce habita
-    - em que lugar voce [vive](live)
-    - [onde voce esta](live) agora
-    - voce [mora](live) no computador
-    - voce [vive](live) na internet
-    - [onde vc esta](live)
-    - qual é o seu habitat
-    - qual é o seu endereço
-    - qual e o seu endereco
-    - qual o seu endereço
-    - qual o seu endereco
-- intent: genero
-  examples: |
-    - voce é [homem ou mulher](genero)
-    - voce é [macho ou femea](genero)
-    - qual o seu [sexo](genero)
-    - voce e [mulher](genero)
-    - voce e um [homem](genero)
-    - você é um [homem](genero)
-    - voce tem [genero](genero)
-    - voce faz [sexo](genero)
-    - voce tem um [penis ou uma vagina](genero)
-    - você é uma mulher
-    - você é andrógeno
-    - voce e androgeno
-- intent: musica
-  examples: |
-    - me indica uma música
-    - manda uma [playlist](musica)
-    - me fala uma [playlist](musica) boa
-    - quero uma [playlist](musica)
-    - [playlist](musica)
-    - qual a melhor [playlist](musica)
-    - sabe qual [playlist](musica) é boa?
-    - diga uma [playlist](musica)
-    - me indica uma [musica](musica)
-    - me indica uma [playlist](musica)
-    - indica uma [música](musica) pra mim
-    - indica uma [música](musica)
-    - indicar [musica](musica)
-- intent: comida
-  examples: |
-    - Qual a sua [comida preferida](comida)?
-    - Que [comida você gosta](comida)?
-    - Que [comida vc gosta](comida)?
-    - qual a [melhor comida](comida)?
-    - Qual seu [lanche preferido](comida)?
-    - Qual comida você me sugere?
-    - O que você [adora comer](comida)?
-    - O que você [gosta de comer](comida)?
-    - qual a sua comida favorita
-    - o que você prefere comer
-    - o que voce prefere comer
-    - qual seu rango favorito
-    - me fala de comida
-- intent: cor
-  examples: |
-    - Qual a sua [cor preferida](cor)?
-    - Que [cor você gosta](cor)?
-    - Que [cor vc gosta](cor)?
-    - qual a [melhor cor](cor)?
-    - Qual sua [cor preferida](cor)?
-    - Qual [cor](cor) você me sugere?
-    - qual a sua cor favorita
-    - qual a sua cor da sorte
-    - qual a sua cor
-    - cor favorita
-    - cor preferida
-    - cor da sorte
-- intent: relacionamento
-  examples: |
-    - Você tem [namorado](relationship)?
-    - Você tem [namorada](relationship)?
-    - Você [namora](relationship)?
-    - Você é [catristeo](relationship)?
-    - [Namorar](relationship) comigo?
-    - Quer [namorar](relationship)?
-    - Bora [namorar](relationship)?
-    - Tem [boyfriend](relationship)?
-    - Tem [girlfriend](relationship)?
-    - você é casado
-    - você tem esposa
-    - voce tem esposa
-    - vc tem esposa
-    - você tem esposo
-    - voce tem esposo
-    - vc tem esposo
-    - você tem namorado
-    - voce gosta de alguem
-    - você gosta de alguém
-    - você ama alguém
-    - gostar de alguém
-    - amar alguém
-    - gosta de alguém
-    - gosta de alguem
-- intent: signo
-  examples: |
-    - Qual o seu [signoo](signo)?
-    - qual é o seu signo
-    - qual o seu signo
-    - Fala seu [signoo](signo)?
-    - diz pra mim qual é seu signo
-    - diz pra mim qual e seu signo
-    - seu signo
-- intent: triste
-  examples: |
-    - Estou [triste](triste)
-    - Estou muito [triste](triste)
-    - [Tristeza](triste)
-    - A [tristeza](triste) me consome
-    - Estou [chorando](triste)
-    - Estou [desapontado](triste)
-    - [depressão](triste)
-    - estou infeliz
-    - estou magoado
-    - estou desanimado
-    - estou frustrado
-    - me sinto fracassado
-    - sou um fracasso
-    - tô muito triste
-    - tô triste
-    - tô infeliz
-    - tô magoado
-    - tô frustrado
-- intent: historia
-  examples: |
-    - me fala uma [história](historia)
-    - me conta uma [história](historia)
-    - [historia](historia)
-    - [história](historia)
-    - conta pra mim uma [historinha](historia)
-    - fala uma [historia](historia) ai
-    - conta uma história pra dormir
-    - conta uma historia pra dormir
-    - me conta uma experiência sua
-    - me conta uma experiencia
-    - me conta uma historinha
-    - me conta uma estória
-- intent: out_of_scope
-  examples: |
-    - você fala sobre o meio ambiente
-    - qual a origem do mundo
-    - vc gosta de carnaval
-    - batatinha quando nasce
-    - imbecil
-    - nojento
-    - chato
-    - babaca
-    - bot feio
-    - bot, burro
-- intent: elogios
-  examples: |
-    - você é muito educado
-    - voce e muito educado
-    - me ajudou muito
-    - você é demais
-    - você é lindo
-    - voce e lindo
-    - voce e maravilhoso
-    - vc é demais
-    - vc e demais
-    - vc eh linda
-    - vc e lindo
-    - vc é bonito
-    - vc é maravilhoso
-    - adorei você
-    - amei você
-    - adorei voce
-    - amei voce
-    - adorei vc
-    - amei vc
-- intent: negar
-  examples: |
-    - não
-    - nao
-    - nao conheco
-    - não quero
-    - escolhi errado
-    - falei errado
-    - duvida
-    - ainda não sei
-    - nenhum
-    - nunca
-    - jamais
-    - nego
-    - cancelo
-    - negativo
-- intent: diga_mais
-  examples: |
-    - como funciona
-    - me diga mais
-    - como assim
-    - e como funciona
+    - boa madrugada
+    - good morning
+    - mornin
+    - good afternoon
+    - good evening
+    - ola
+    - oie
+    - opa
+    - eae
+    - eaí
+    - eai
+    - e ae
+    - opa meu bom
+    - olá
+    - hola
+    - hello
+    - hi
+    - hey
+    - ei
+    - hello there
+    - hey
+    - hallo
+    - bom ver você
+    - bom ver voce
+    - legal ver você
+    - namastê
+    - namaste
+    - saudações
+    - saudação
+    - saudaçoes
+    - saudaçao
+    - salve
+    - oiii
+    - oiee
+    - iai
+    - oiiiii
+
 - intent: tudo_bem
   examples: |
-    - tudo bem
-    - como vai voce
-    - como vao as coisas
-    - opa tudo bem
-    - to bem
-    - tranquilo
-    - estou bem
-    - estou otimo
-    - tudo bem e você
-    - tudo bom
-    - tá bem
-    - ta bem
-    - como vocês esta
+    - hey there
+    - what's up
+    - sup
+    - como está tudo
+    - vai bem
+    - como estao as coisas
+    - como estão as coisas
+    - howdy
+    - wotcha
+    - hiya
+    - how you doin'
     - como voce esta
-    - como voce ta
-    - como vai você
-    - como vai vc
-- intent: o_que_sei_falar
+    - tudo bom
+    - tudo bem?
+    - como vão as coisas
+    - como vai
+    - como vai voce
+    - Como você está
+    - como vc ta
+    - como estão as coisas
+    - como está sendo seu dia
+    - joia
+    - joinha
+    - tudo bom
+    - turu bom
+    - bele e vc
+    - suave e vc
+    - beleza
+    - bom
+    - esta bem
+    - voce está bem
+    - você esta bem
+
+- intent: despedir
   examples: |
-    - sobre o que você sabe falar
-    - o que mais você sabe falar
-    - quais assuntos você fala
-    - o que você sabe
-    - lista de assuntos possiveis
-    - quais as perguntas vc responde
-    - quais as perquisar você responde
-    - quero ajuda
-    - meajuda
-    - meajude
-    - MEAJDA
-    - me ajuda
-    - me ajude
-    - ajuda eu
-    - menu
-- intent: afirmar
+    - Tchau obrigada
+    - Tchau
+    - tchau obg
+    - até logo
+    - bis bald
+    - xau
+    - bye bye
+    - cya
+    - sayonara
+    - até mais
+    - até breve
+    - falou, valeu
+    - flw vlw
+    - bon voyage
+    - arrivederci
+    - vou pegar o beco
+    - to indo ali, flw
+    - beijinho beijinho tchau tchau
+    - abraços
+    - abraço hétero
+    - beijos
+    - beijos de luz
+    - até mais ver
+    - adeus
+    - hasta la vista, baby
+    - obrigado pela ajuda
+    - obrigada
+    - obrigado
+    - abraços
+    - flw
+    - partiu
+    - vou embora
+    - adeus
+    - adeusinho
+    - ate a proxima
+    - até a próxima
+    - até à próxima
+    - até depois
+    - ate depois
+    - até a vista
+    - até logo
+
+- intent: manter_conversa
   examples: |
-    - sim
-    - confirmo
-    - afirmo
-    - claro
+    - de acordo
+    - compreendido
+    - está bem
+    - tudo certo
+    - td certo
+    - positivo
     - exato
-    - isso mesmo
-- intent: objetivo
+    - correto
+    - foi definido
+    - certo
+    - beleza
+    - perfeito
+    - ótimo
+    - perfect
+    - legal
+    - massa
+    - curti
+    - cool
+    - ok
+    - okay
+    - justo
+    - bele
+    - entendi
+    - consegui
+    - cool cool cool cool
+    - consegui, top
+    - foi esclarecido
+    - foi de grande ajuda
+    - muito util
+    - ajudou bastante
+    - ajudou muito
+    - gostei bastante
+    - tirou minhas dúvidas
+    - esclareceu minha dúvida
+    - era so isso
+
+- intent: menu_ajuda
   examples: |
-    - Qual o seu objetivo robo?
-    - Qual o seu objetivo robô?
-    - Vc tem um objetivo de existencia?
-    - Você foi feito pra que?
-    - Vc tem algum propósito?
-    - Como que vc pode me ser útil?
-    - Me fale mais sobre você.
-- intent: cancelar
+    - o que vc faz
+    - o que você faz
+    - como te usar
+    - o que você sabe
+    - com o que voce pode me ajudar
+    - como você funciona
+    - me ajuda
+    - como te perguntar algo
+    - estou com uma duvida
+    - menu
+    - você possui menu
+    - usabilidade
+    - como tirar dúvida
+    - quero estudar
+    - como estudar com você
+    - quero aprender
+    - suas capacidades
+    - sua habilidades
+    - quais conteúdos consigo aprender com voce
+    - menu ajuda
+    - o que você pode fazer?
+    - quais as suas capidades?
+    - o que você sabe?
+
+
+- intent: curiosidades_python
   examples: |
-    - Desisto
-    - Para
-    - Cancela
-    - Sai disso
-    - Me tira daqui
-    - Para com isso
-    - Me tira disso
-    - Quero cancelar
-    - Saia dessa conversa
-    - Não quero mais isso
-    - Cancele esta operação
-    - Para de me perguntar coisas
-    - cansei, não quero responder!
-    - Pare o que você está fazendo
-    - Que loucura está acontecendo?!
-    - Não quero compartilhar meus dados
-    - Não quero mais informar meus dados
-- intent: feedback
+    - zen do python
+    - monte python
+    - monty python
+    - the zen of python
+    - curiosidades de python
+    - curiosidades da linguagem python
+    - saber mais de python
+    - tenho interesse em python
+    - curiosidades python
+    - curiosidade python
+    - curiosidades python
+    - poema
+    - novidade python
+    - curiosity python
+    - bisbilhotice python
+    - inusitado python
+    - curiosos python
+    - dados curiosos python
+    - fatos curiosos python
+    - fatos desconhecidos python
+    - trivia python
+
+- intent: out_of_scope
   examples: |
-    - gostei muito desse bot
-    - me ajudou bastante
-    - amei demais
-    - foi muito util
-    - melhor bot
-    - gostei
-    - não gostei
-    - bot inutil
-    - não serviu pra nada
-    - não meu ajudou
-    - não funciona
-    - bot sem classe
-    - tanto faz
-    - irrelevante pra mim
-    - normalzinho
-    - bot normal
-    - nada a declarar
-    - nada de mais
-    - foi normal a conversa
-    - nem fede e nem cheira
+    - você sabe sobre grafos
+    - o que é geometria computacional
+    - o que é uma tupula
+    - existem árvores binarias em python
+    - você fala sobre o meio ambiente
+    - como dar espaçamento no python
+    - qual a origem do mundo
+    - você tem signo
+    - vc gosta de carnaval
+    - qual a melhor linguagem de programação
+    - o que você acha de C++
+    - C é uma boa linguagem
+    - torce pra qual time
+    - joga algum jogo
+    - gosta de ouvir música
+    - me indique uma playlist para estudar
+    - qual seu signo
+    - o que é stackoverflow
+    - o que é uma lista
+    - oq e uma lista
+    - quanto rende o fgts
+    - o que achou do final de game of thrones
+    - cotação do dólar hoje
+    - me ensina estrutura de dados
+
+- intent: assuntos_inapropriados
+  examples: |
+    - porra
+    - caralho
+    - merda
+    - tomar no cu
+    - tncbis bald
+    - fdp
+    - crlh
+    - vsf
+    - foda-se
+    - carai
+    - fuck
+    - bosta
+    - desgraça
+    - rola
+    - piroca
+    - pinto
+    - pau
+    - droga
+    - disgraca
+    - cacete
+    - cú
+    - buceta
+    - pênis
+    - penis
+    - bilau
+    - piru
+    - pica
+    - fodido
+    - caraí
+    - carai
+    - puta merda
+    - puta
+    - puta que pariu
+    - tomar no cú
+    - foda-se
+    - foda se
+    - filho da puta
+    - fuder
+    - foder
+    - pqp
+    - fudido
+    - desgraça
+    - disgrama
+    - dane-se
+    - te odeio
+    - otaria
+    - vagabunda
+    - anus
+    - ânus
+    - babaca
+    - baitola
+    - bicha
+    - bixa
+    - boceta
+    - boco
+    - bocó
+    - boiola
+    - boquete
+    - bronha
+    - broxa
+    - buceta
+    - bunda
+    - bunduda
+    - burra
+    - busseta
+    - cachorra
+    - cadela
+    - caga
+    - cagado
+    - cagao
+    - cagão
+    - cagona
+    - canalha
+    - cara de pau
+    - caralho
+    - caraio
+    - carniça
+    - chatice
+    - chato
+    - checheca
+    - chereca
+    - chifruda
+    - chochota
+    - chota
+    - corna
+    - cornuda
+    - cornudo
+    - cretina
+    - cretino
+    - cú
+    - cu
+    - cuzao
+    - cuzão
+    - cuzuda
+    - cuzudo
+    - debil
+    - debiloide
+    - demonio
+    - demônio
+    - desgracado
+    - desgraçada
+    - desgracados
+    - desgraçados
+    - escrota
+    - escroto
+    - estupida
+    - estúpida
+    - estupidez
+    - estupido
+    - estúpido
+    - fdp
+    - filho da puta
+    - foda
+    - fodao
+    - fodão
+    - fode
+    - fodida
+    - fodido
+    - fudecao
+    - fudeção
+    - fudendo
+    - fudida
+    - fudido
+    - idiota
+    - idiotas
+    - idiotice
+    - imbecil
+    - inferno
+    - iscrota
+    - iscroto
+    - masturba
+    - merda
+    - otaria
+    - otária
+    - otario
+    - otário
+    - otarios
+    - otários
+    - páu
+    - pau
+    - penis
+    - pênis
+    - perereca
+    - pica
+    - piroca
+    - porra
+    - pqp
+    - prostituta
+    - prostituto
+    - punheta
+    - punhetao
+    - punhetão
+    - puta
+    - puto
+    - retardada
+    - retardado
+    - rola
+    - rosca
+    - sacana
+    - sacanagem
+    - safada
+    - safado
+    - safados
+    - sapatao
+    - sapatão
+    - siririca
+    - tarada
+    - tarado
+    - testuda
+    - tezao
+    - tezão
+    - tezuda
+    - tezudo
+    - toma no cu
+    - tomar no cu
+    - trouxa
+    - trouxas
+    - troxa
+    - vaca
+    - vagabunda
+    - vagabundo
+    - veada
+    - viada
+    - viadao
+    - viadão
+    - viado
+    - viados
+    - xana
+    - xerereca
+    - xexeca
+    - xochota
+    - xota
+    - xoxota
+
+- intent: sobre_programaçao
+  examples: |
+    - não sei programar
+    - quero aprender programação
+    - nao sei programar
+    - quero aprender programaçao
+    - como programar
+    - quero fazer jogos
+    - quero criar um jogo
+    - quero criar jogos
+    - como faço um jogo
+    - quero fazer um app
+    - quero fazer um aplicativo
+    - n sei programar
+    - qro aprender programação
+    - n sei programar
+    - qro aprender programaçao
+    - como programar
+    - qro fazer jogos
+    - qro criar um jogo
+    - qro criar jogos
+    - como faço um jogo
+    - qro fazer um app
+    - qro fazer um aplicativo
+    - pretendo fazer um aplicativo
+    - pretendo fazer um app
+    - pretendo fazer um jogo
+    - preciso aprender programaçao
+    - preciso programar
+    - preciso fazer jogos
+    - preciso criar um jogo
+    - preciso criar jogos
+    - preciso fazer um app
+    - preciso fazer um aplicativo
+    - preciso aprender programação
+    - preciso aprender programaçao
+    - quero ser igual ao bill gates
+    - quero ser igual ao steve jobs
+    - quero ser um programador
+    - programar
+    - programador
+    - jogos
+    - jogo
+    - app
+    - aplicativos
+
+- intent: cronograma
+  examples: |
+    - /cronograma
+    - cronograma de estudos
+    - cronograma
+    - qual conteudo devo aprender primeiro
+    - qual conteúdo devo aprender primeiro
+    - quais conteudos devo aprender primeiro
+    - quais conteúdos devo aprender primeiro
+    - cronograma python
+    - cronograma de ensino
+    - cronograma aprender python do zero
+    - entender python do zero
+    - todos os conteudos de python
+    - python na ordem
+    - como aprender python
+    - em qual ordem devo aprender python
+    - ordem de estudo
+    - ordem de conteúdos
+    - qual a ordem de conteudos
+    - o que aprender agora
+    - o que você pode me ensinar
+    - planejamento dos estudos
+    - ordem do que devo aprender
+    - indice de estudos
+    - indice
+    - indíce
+    - sumário dos conteúdos
+    - sumário de conteúdo
+
+- intent: pesquisa_stackoverflow
+  examples: |
+    - pesquise sobre: C++
+    - pesquise sobre: python
+    - pesquise sobre: ruby
+    - pesquise sobre: pearl
+    - pesquise sobre: java
+    - pesquise sobre: flask
+    - pesquise sobre: django
+
+- intent: pesquisar
+  examples: |
+    - pesquise esse erro para mim
+    - conecte com a internet
+    - olhe no stackoverflow
+    - procure na internet
+    - procure no stackoverflow
+    - quero fazer uma pesquisa
+    - quero pesquisar algo
+    - quero pesquisar um erro
+    - quero fazer uma pesquisa   
+    - quero realizar uma pesquisa
+    - gostaria de pesquisar um erro
+    - gostaria de verficar algo na internet
+    - estou com um erro
+    - preciso resolver um erro
+    - tenho um erro no programa
+    - tem um erro no codigo
+    - tem um erro no meu codigo  
+    - possui um erro no meu programa
+    - o programa esta com um erro
+    - desejo pesquisar algo
+    - desejo verificar um erro
+    - desejo pesquisar algo
+    - apareceu um bug aqui
+    - tive um problema no código
+
+- intent: codigo_em_python_variaveis
+  examples: |
+    - código variáveis
+    - código python variaveis
+    - código python variável
+    - variáveis em python
+    - variavel em python
+    - código de variável
+    - código de variaveis
+    - exemplo prático de variavel
+    - exemplo prático de variáveis
+    - código python variaveis
+    - variável código em python
+    - código de variavel 
+    - codigo de variáveis
+    - exemplo prático de variável
+    - exemplo pratico de variaveis
+    - variavel no python
+    - variáveis no python
+    - variável no python
+    - variaveis em código
+    - variavel no python
+    - código em python de variáveis
+    - código em python de variável
+    - implementação com variaveis
+    - implementação com variavel
+    - exemplifique em código variáveis
+    - exemplifique em código variável
+    - como funcionam variaveis no código
+    - como funcionam variavel no código
+    - implemente um exemplo de variáveis
+    - me mostre um código com variaveis
+    - demonstre variáveis na prática
+    - demonstre variável na prática
+    - demonstre um código em python que possua variavel
+    - demonstre um código em python que possua variáveis
+
+- intent: codigo_em_python_inteiros
+  examples: |
+    - código int
+    - código python inteiros
+    - código python int
+    - inteiros em python
+    - inteiro em python
+    - código de inteiro
+    - código de int
+    - exemplo prático de inteiro
+    - exemplo prático de inteiros
+    - código python inteiros
+    - inteiro código em python
+    - código de ints
+    - codigo de inteiro
+    - exemplo prático de inteiro
+    - exemplo pratico de inteiros
+    - inteiro no python
+    - inteiros no python
+    - inteiro no python
+    - inteiros em código
+    - inteiro no python
+    - código em python de inteiros
+    - código em python de inteiro
+    - implementação com ints
+    - implementação com inteiro
+    - exemplifique em código inteiros
+    - exemplifique em código inteiro
+    - como funcionam inteiros no código
+    - como funcionam inteiro no código
+    - implemente um exemplo de inteiros
+    - me mostre um código com inteiros
+    - demonstre ints na prática
+    - demonstre inteiro na prática
+    - demonstre um código em python que possua inteiro
+    - demonstre um código em python que possua inteiros
+
+- intent: codigo_em_python_pontos_flutuantes
+  examples: |
+    - código double
+    - código python double
+    - código python float 
+    - pontos flutuantes em python
+    - ponto flutuante em python
+    - código de ponto flutuante
+    - código de pontos flutuantes
+    - exemplo prático de float 
+    - exemplo prático de pontos flutuantes
+    - código python double
+    - ponto flutuante código em python
+    - código de pontos flutuantes
+    - codigo de ponto flutuante
+    - exemplo prático de float 
+    - exemplo pratico de pontos flutuantes
+    - ponto flutuante no python
+    - pontos flutuantes no python
+    - ponto flutuante no python
+    - pontos flutuantes em código
+    - ponto flutuante no python
+    - código em python de double
+    - código em python de ponto flutuante
+    - implementação com pontos flutuantes
+    - implementação com float 
+    - exemplifique em código pontos flutuantes
+    - exemplifique em código ponto flutuante
+    - como funcionam pontos flutuantes no código
+    - como funcionam ponto flutuante no código
+    - implemente um exemplo de pontos flutuantes
+    - me mostre um código com double
+    - demonstre pontos flutuantes na prática
+    - demonstre float  na prática
+    - demonstre um código em python que possua ponto flutuante
+    - demonstre um código em python que possua pontos flutuantes
+
+- intent: codigo_em_python_caracteres
+  examples: |
+    - código chars
+    - código python caracteres
+    - código python char
+    - caracteres em python
+    - caracter em python
+    - código de caracter
+    - código de chars
+    - exemplo prático de caracter
+    - exemplo prático de caracteres
+    - código python caracteres
+    - caracter código em python
+    - código de caracteres
+    - codigo de char
+    - exemplo prático de caracter
+    - exemplo pratico de caracteres
+    - caracter no python
+    - caracteres no python
+    - caracter no python
+    - caracteres em código
+    - caracter no python
+    - código em python de chars
+    - código em python de caracter
+    - implementação com caracteres
+    - implementação com char
+    - exemplifique em código caracteres
+    - exemplifique em código caracter
+    - como funcionam caracteres no código
+    - como funcionam caracter no código
+    - implemente um exemplo de caracteres
+    - me mostre um código com chars
+    - demonstre caracteres na prática
+    - demonstre char na prática
+    - demonstre um código em python que possua caracter
+    - demonstre um código em python que possua chars
+
+- intent: codigo_em_python_booleanos
+  examples: |
+    - código bools
+    - código python booleanos
+    - código python bool
+    - booleanos em python
+    - booleano em python
+    - código de bool
+    - código de booleanos
+    - exemplo prático de booleano
+    - exemplo prático de bools
+    - código python booleanos
+    - booleano código em python
+    - código de booleanos
+    - codigo de booleano
+    - exemplo prático de booleano
+    - exemplo pratico de booleanos
+    - booleano no python
+    - booleanos no python
+    - bool no python
+    - bools em código
+    - booleano no python
+    - código em python de booleanos
+    - código em python de booleano
+    - implementação com booleanos
+    - implementação com booleano
+    - exemplifique em código booleanos
+    - exemplifique em código bool
+    - como funcionam bools no código
+    - como funcionam booleano no código
+    - implemente um exemplo de booleanos
+    - me mostre um código com booleanos
+    - demonstre booleanos na prática
+    - demonstre bool na prática
+    - demonstre um código em python que possua booleano
+    - demonstre um código em python que possua bools
+
+- intent: codigo_em_python_strings
+  examples: |
+    - código strings
+    - código python strings
+    - código python string
+    - strings em python
+    - string em python
+    - código de string
+    - código de strings
+    - exemplo prático de string
+    - exemplo prático de strings
+    - código python strings
+    - string código em python
+    - código de strings
+    - codigo de string
+    - exemplo prático de string
+    - exemplo pratico de strings
+    - string no python
+    - strings no python
+    - string no python
+    - strings em código
+    - string no python
+    - código em python de strings
+    - código em python de string
+    - implementação com strings
+    - implementação com string
+    - exemplifique em código strings
+    - exemplifique em código string
+    - como funcionam strings no código
+    - como funcionam string no código
+    - implemente um exemplo de strings
+    - me mostre um código com strings
+    - demonstre strings na prática
+    - demonstre string na prática
+    - demonstre um código em python que possua string
+    - demonstre um código em python que possua strings
+
+- intent: codigo_em_python_condicionais
+  examples: |
+    - código condicionais
+    - código python condicionais
+    - código python condicional
+    - condicionais em python
+    - condicional em python
+    - código de condicional
+    - código de condicionais
+    - exemplo prático de condicional
+    - exemplo prático de condicionais
+    - código python condicionais
+    - condicional código em python
+    - código de condicionais
+    - codigo de condicional
+    - exemplo prático de condicional
+    - exemplo pratico de condicionais
+    - condicional no python
+    - condicionais no python
+    - condicional no python
+    - condicionais em código
+    - condicional no python
+    - código em python de condicionais
+    - código em python de condicional
+    - implementação com condicionais
+    - implementação com condicional
+    - exemplifique em código condicionais
+    - exemplifique em código condicional
+    - como funcionam condicionais no código
+    - como funcionam condicional no código
+    - implemente um exemplo de condicionais
+    - me mostre um código com condicionais
+    - demonstre condicionais na prática
+    - demonstre condicional na prática
+    - demonstre um código em python que possua condicional
+    - demonstre um código em python que possua condicionais
+
+- intent: codigo_em_python_repeticao
+  examples: |
+    - código repetição
+    - código for while repetição
+    - código python repetição
+    - codigo python repetição
+    - código python for while
+    - repetição em python
+    - for while em python
+    - codigo de for while
+    - código de repetição
+    - exemplo prático de for e while
+    - exemplo prático de repetição
+    - for while no python
+    - for no python
+    - while no python
+    - for python
+    - while python
+    - repetição no python
+    - repetição em código
+    - for while em código
+    - código em python de repetição
+    - código em python com loop
+    - implementação com repetição
+    - implementação com for e while
+    - exemplifique em código repetição
+    - exemplifique em código for while
+    - como funcionam repetição no código
+    - implemente um exemplo de repetição
+    - me mostre um código com repetição
+    - demonstre repetição na prática
+    - demonstre um código em python que possua loops
+    - demonstre um código em python que possua repetição
+
+- intent: codigo_em_python_funcao
+  examples: |
+    - código função
+    - código python função
+    - função em python
+    - codigo python função
+    - funções em python
+    - código de função
+    - exemplo prático de funções
+    - exemplo prático de função
+    - função no python
+    - funções no python
+    - funções em código
+    - função em código
+    - código em python de funções
+    - código em python de função
+    - implementação com funções
+    - implementação com função
+    - exemplifique em código função
+    - como funcionam funções no código
+    - como funcionam função no código
+    - implemente um exemplo de funções
+    - implemente um exemplo de função
+    - me mostre um código com funções
+    - me mostre um código com função
+    - demonstre função na prática
+    - demonstre um código em python que possua função
+
+- intent: codigo_em_python_arquivos
+  examples: |
+    - código arquivo
+    - código python arquivo
+    - arquivo em python
+    - código de arquivo
+    - codigo de arquivos
+    - exemplo prático de arquivos
+    - exemplo pratico de arquivo
+    - arquivo no python
+    - arquivos no python
+    - variaveis em código
+    - arquivo em codigo
+    - código em python de arquivo
+    - codigo em python de arquivos
+    - implementação com arquivo
+    - implementacao com arquivos
+    - exemplifique em código arquivo
+    - exemplifique em codigo arquivos
+    - como funcionam arquivos no código
+    - como funciona arquivo no codigo
+    - implemente um código com arquivo
+    - implemente um exemplo de arquivo
+    - me mostre um código com arquivo
+    - demonstre arquivo na prática
+    - demonstre arquivos na pratica
+    - demonstre um código em python que possua arquivo
+
+- intent: codigo_em_python_vetores
+  examples: |
+    - código vetores vetor
+    - código python vetores
+    - vetores em python
+    - código de vetores
+    - codigo de vetor
+    - exemplo prático de vetores
+    - exemplo pratico de vetor
+    - vetores no python
+    - vetor no python
+    - vetores em código
+    - vetor em codigo
+    - exemplifique em código vetores
+    - exemplifique em codigo vetor
+    - como funcionam vetores no código
+    - como funciona vetor no codigo
+    - código em python de vetor
+    - codigo em python de vetores
+    - implementação com vetores
+    - implementacao com vetor
+    - implemente um código com vetores
+    - implemente um exemplo de vetor
+    - me mostre um código com vetores
+    - demonstre vetores na prática
+    - demonstre vetor na pratica
+    - demonstre um código em python que possua vetores vetor
+
+- intent: codigo_em_python_matrizes
+  examples: |
+    - código matrizes
+    - código python matrizes
+    - matriz em python
+    - código de matrizes
+    - codigo de matriz
+    - exemplo prático de matrizes
+    - exemplo pratico de matriz
+    - matriz no python
+    - matrizes no python
+    - matrizes em código
+    - matriz em codigo
+    - exemplifique em código matrizes
+    - exemplifique em codigo matriz
+    - como funcionam matrizes no código
+    - como funciona matriz no codigo
+    - implemente um código com matrizes
+    - implemente um exemplo de matrizes
+    - código em python de matrizes
+    - codigo em python de matriz
+    - implementação com matrizes
+    - implementacao com matriz
+    - me mostre um código com matrizes
+    - demonstre matrizes na prática
+    - demonstre matriz na pratica
+    - demonstre um código em python que possua matrizes
+
+- intent: codigo_em_python_importar_bibliotecas
+  examples: |
+    - código importar bibliotecas
+    - código python importar biblioteca
+    - importar bibliotecas em python
+    - código que importa bibliotecas
+    - codigo que importa biblioteca
+    - exemplo prático para importar bibliotecas
+    - exemplo pratico para importar biblioteca
+    - importar biblioteca no python
+    - importar bibliotecas no python
+    - importar bibliotecas em código
+    - importar biblioteca em codigo
+    - código em python para importar bibliotecas
+    - codigo em python que importa biblioteca
+    - implementação que importa bibliotecas
+    - implementacao para importar biblioteca
+    - exemplifique em código como importar bibliotecas
+    - exemplifique em codigo importação biblioteca
+    - como funcionam bibliotecas no código
+    - como funciona importar biblioteca no codigo
+    - implemente um código que importe bibliotecas
+    - implemente um exemplo que importe uma biblioteca
+    - me mostre um código para importar bibliotecas
+    - demonstre como importar bibliotecas na prática
+    - demonstre bibliotecas na pratica
+    - demonstre um código em python que possua bibliotecas
+
+- intent: codigo_em_python_input_dados
+  examples: |
+    - como funcionam input de dados no código
+    - como funcionam input no código
+    - como funcionam leitura de dados no código
+    - código de input
+    - código de input de dados
+    - código de leitura de dados
+    - código em python de input
+    - código em python de input de dados
+    - código em python de leitura de dados
+    - código input
+    - código input de dados
+    - código leitura de dados
+    - códipo python input
+    - códipo python input de dados
+    - códipo python leitura de dados
+    - demonstre input de dados na prática
+    - demonstre input na prática
+    - demonstre leitura de dados na prática
+    - demonstre um código em python que possua inputdemonstre um código em python que possua input de dados
+    - demonstre um código em python que possua leitura de dadosexemplifique em código input
+    - exemplifique em código input de dados
+    - exemplifique em código leitura de dados
+    - exemplo prático de input
+    - exemplo prático de input de dados
+    - exemplo prático de leitura de dados
+    - implementação com input
+    - implementação com input de dados
+    - implementação com leitura de dados
+    - implemente um exemplo de input
+    - implemente um exemplo de input de dados
+    - implemente um exemplo de leitura de dados
+    - input de dados em código
+    - input de dados em python
+    - input de dados no python
+    - input em código
+    - input em python
+    - input no python
+    - leitura de dados em código
+    - leitura de dados em python
+    - leitura de dados no python
+    - me mostre um código com input
+    - me mostre um código com input de dados
+    - me mostre um código com leitura de dados
+
+
+- intent: conteudo_extra_repeticao
+  examples: |
+    - extra for
+    - extra while
+    - extra laços
+    - extra repetição
+    - extra repetição
+    - conteúdo adicional for
+    - conteúdo adicional while
+    - conteudo adicional for
+    - conteudo adicional while
+    - conteudo extra laços
+    - conteúdo extra laços
+    - conteudo extra estrutura de repetiçao
+    - conteúdo extra estrutura de repetição
+    - mais sobre laços
+    - mais sobre for while
+    - outra fonte estrutura repetição
+    - outra fonte for while
+    - complemente while
+    - complemente for
+    - complementar for
+    - complementar while
+    - suplementar for
+    - suplementar while
+    - suplementar estrutura de repeticao
+    - suplementar estrutura de repetição
+    - complemenar estrutura de repeticao
+    - mais informações sobre for
+    - mais informações sobre while
+    - mais informações sobre estrutura de repetiçao
+    - conteúdo mais aprofundado for
+    - conteúdo mais aprofundado while
+    - conteúdo mais aprofundado estrutura de repetição
+    - link extra for
+    - link extra while
+    - link extra estrutura repetição
+    - site extra for
+    - site extra while
+    - site extra estrutura repetição
+    - site confiavel para aprender loops
+    - site confiavel para estrutura de repetição
+    - site confiavel para estruturas de repetição
+    - site confiavel extra para estruturas de repetição
+
+- intent: conteudo_extra_condicionais
+  examples: |
+    - extra if
+    - extra else
+    - extra condicional
+    - extra estrutura condicional
+    - extra estruturas condicionais
+    - conteúdo adicional if
+    - conteúdo adicional else
+    - conteudo adicional if
+    - conteudo adicional else
+    - conteudo extra condicionais
+    - conteúdo extra condicional
+    - conteudo extra estruturas condicionais
+    - conteúdo extra estrutura condicional
+    - mais sobre condição
+    - mais sobre if else
+    - outra fonte estrutura condicional
+    - outra fonte if else
+    - complemente if
+    - complemente else
+    - complementar if
+    - complementar else
+    - suplementar if
+    - suplementar else
+    - suplementar estrutura condicional
+    - suplementar estruturas condicionais
+    - complementar estrutura condicional
+    - mais informações sobre if
+    - mais informações sobre else
+    - mais informações sobre estrutura condicional
+    - conteúdo mais aprofundado if
+    - conteúdo mais aprofundado else
+    - conteúdo mais aprofundado estruturas condicionais
+    - conteúdo mais aprofundado estrutura condicional
+    - link extra if
+    - link extra else
+    - link extra estruturas condicionais
+    - link extra estrutura condicional
+    - site extra if
+    - site extra else
+    - site extra estruturas condicionais
+    - site extra estrutura condicional
+    - site confiavel para aprender estruturas condicionais
+    - site confiavel para estruturas condicionais
+    - site confiavel extra para estrutura condicional
+
+- intent: conteudo_extra_variaveis
+  examples: |
+    - tem algum link pra entender variáveis?
+    - mais conteúdo sobre variaveis
+    - links externos para variáveis
+    - links sobre variaveis
+    - mais informações sobre variáveis
+    - conteudo aprofundado de variaveis
+    - mais sobre variáveis
+    - tem links sobre variaveis?
+    - me manda algum site falando sobre variáveis
+    - sites variaveis
+    - link variável
+    - conteúdo extra variável
+    - conteúdos extra variáveis
+    - nao entendi variável, algum site?
+    - me dá mais conteúdo sobre variáveis, pf
+    - extra variavel
+    - extra variaveis
+    - extra int
+    - extra double
+    - extra float
+    - extra variaveis em python
+    - conteúdo adicional variavel
+    - conteúdo adicional variaveis
+    - conteudo adicional int
+    - conteudo adicional double
+    - conteudo adicional float
+    - conteudo extra variaveis
+    - conteúdo extra variavel
+    - mais sobre variaveis
+    - mais sobre variavel
+    - outra fonte variaveis
+    - outra fonte variavel
+    - complemente variaveis
+    - complemente variavel
+    - complementar int double float
+    - suplementar variável
+    - suplementar variavel
+    - suplementar variaveis
+    - suplementar int double float
+    - complementar variaveis
+    - mais informações sobre variaveis
+    - mais informações sobre variavel
+    - mais informações sobre int float double
+    - conteúdo mais aprofundado variaveis
+    - conteúdo mais aprofundado variavel
+    - conteúdo mais aprofundado variável
+    - link extra variavel
+    - link extra variaveis
+    - link extra variável
+    - site extra variavel
+    - site extra variaveis
+    - site extra variável
+    - site confiavel para aprender variáveis
+    - site confiavel para variáveis
+    - site confiavel extra para variavel
+
+- intent: conteudo_extra_funcao
+  examples: |
+    - tem algum link pra entender função?
+    - tem algum link pra entender funçoes?
+    - tem algum link pra entender funções?
+    - extra funcao
+    - extra função
+    - extra funçoes
+    - extra funcoes
+    - extra funções
+    - extra funções em python
+    - extra função em python
+    - conteúdo adicional funcao
+    - conteúdo adicional função
+    - conteudo adicional funçoes
+    - conteudo adicional funcoes
+    - conteudo adicional funções
+    - conteudo extra funcao
+    - conteúdo extra função
+    - mais sobre funçoes
+    - mais sobre função
+    - mais sobre funcoes
+    - mais sobre funcao
+    - outra fonte funçoes
+    - outra fonte funcoes
+    - complemente função
+    - complemente funções
+    - complementar função
+    - suplementar funções
+    - suplementar função
+    - suplementar funcoes
+    - suplementar funcao
+    - complementar funções
+    - mais informações sobre funções
+    - mais informações sobre função
+    - mais informações sobre funcao
+    - conteúdo mais aprofundado funções
+    - conteúdo mais aprofundado função
+    - conteúdo mais aprofundado funcao
+    - link extra funções
+    - link extra variaveis
+    - link extra função
+    - site extra funcao
+    - site extra função
+    - site extra funções
+    - site confiavel para aprender funções
+    - site confiavel para funções
+    - site confiavel extra para função
+
+- intent: conteudo_extra_arquivos
+  examples: |
+    - tem algum link pra entender arquivos?
+    - extra arquivo
+    - extra arquivos
+    - extra escrever arquivos
+    - extra ler arquivos
+    - conteúdo adicional arquivo
+    - conteúdo adicional arquivos
+    - conteudo adicional ler arquivos
+    - conteudo adicional ler arquivo
+    - conteudo adicional escrever arquivo
+    - conteudo extra arquivo
+    - conteúdo extra arquivos
+    - mais sobre arquivos
+    - mais sobre arquivo
+    - outra fonte arquivo
+    - outra fonte arquivos
+    - complemente arquivo
+    - complemente arquivos
+    - complementar ler e escrever arquivo arquivos
+    - suplementar arquivo
+    - suplementar arquivos
+    - suplementar ler arquivo arquivos
+    - suplementar escrever arquivo arquivos
+    - mais informações sobre arquivos
+    - mais informações sobre arquivo
+    - mais informações sobre ler escrever arquivo
+    - conteúdo mais aprofundado arquivo
+    - conteúdo mais aprofundado arquivos
+    - conteúdo mais aprofundado ler escrever arquivo arquivos
+    - link extra arquivo
+    - link extra arquivos
+    - link extra ler escrever arquivo arquivos
+    - site extra arquivo
+    - site extra arquivos
+    - site extra ler escrever arquivo arquivos
+    - site confiavel para aprender arquivos
+    - site confiavel para arquivos
+    - site confiavel extra para arquivo
+
+- intent: conteudo_extra_vetores
+  examples: |
+    - extra vetor
+    - extra vetores
+    - extra arrays
+    - extra array unidimensional
+    - conteúdo adicional vetor
+    - conteúdo adicional vetores
+    - conteudo adicional arrays
+    - conteudo adicional array unidimensional
+    - conteudo extra vetor
+    - conteúdo extra vetores
+    - conteudo extra arrays
+    - conteúdo extra array unidimensional
+    - mais sobre vetor
+    - mais sobre vetores
+    - mais sobre arrays
+    - mais sobre array unidimensional
+    - outra fonte vetor
+    - outra fonte vetores
+    - outra fonte arrays
+    - outra fonte array unidimensional
+    - complemente vetor
+    - complemente vetores
+    - complemente arrays
+    - complemente array unidimensional
+    - complementar vetor
+    - complementar vetores
+    - complementar arrays
+    - complementar array unidimensional
+    - suplementar vetor
+    - suplementar vetores
+    - suplementar arrays
+    - suplementar array unidimensional
+    - mais informações sobre vetor
+    - mais informações sobre vetores
+    - mais informações sobre arrays
+    - mais informações sobrearray unidimensional
+    - conteúdo mais aprofundado vetor
+    - conteúdo mais aprofundado vetores
+    - conteúdo mais aprofundado arrays
+    - conteúdo mais aprofundado array unidimensional
+    - link extra vetor
+    - link extra vetores
+    - link extra arrays
+    - link extra array unidimensional
+    - site extra vetor
+    - site extra vetores
+    - site extra arrays
+    - site extra array unidimensional
+    - site confiavel para aprender arrays
+    - site confiavel para vetores
+    - site confiavel extra para vetor
+
+
+- intent: conteudo_extra_matrizes
+  examples: |
+    - extra matriz
+    - extra matrizes
+    - extra arrays bidimensionais
+    - extra array bidimensional
+    - conteúdo adicional matriz
+    - conteúdo adicional matrizes
+    - conteudo adicional arrays bidimensionais
+    - conteudo adicional array bidimensional
+    - conteudo extra matriz
+    - conteúdo extra matrizes
+    - conteudo extra arrays bidimensionais
+    - conteúdo extra array bidimensional
+    - mais sobre matriz
+    - mais sobre matrizes
+    - mais sobre arrays bidimensionais
+    - mais sobre array bidimensional
+    - outra fonte matriz
+    - outra fonte matrizes
+    - outra fonte arrays bidimensionais
+    - outra fonte array bidimensional
+    - complemente matriz
+    - complemente matrizes
+    - complemente arrays bidimensionais
+    - complemente array bidimensional
+    - complementar matriz
+    - complementar matrizes
+    - complementar arrays bidimensionais
+    - complementar array bidimensional
+    - suplementar matriz
+    - suplementar matrizes
+    - suplementar arrays bidimensionais
+    - suplementar array bidimensional
+    - mais informações sobre matriz
+    - mais informações sobre matrizes
+    - mais informações sobre arrays bidimensionais
+    - mais informações sobrearray bidimensional
+    - conteúdo mais aprofundado matriz
+    - conteúdo mais aprofundado matrizes
+    - conteúdo mais aprofundado arrays bidimensionais
+    - conteúdo mais aprofundado array bidimensional
+    - link extra matriz
+    - link extra matrizes
+    - link extra arrays bidimensionais
+    - link extra array bidimensional
+    - site extra matriz
+    - site extra matrizes
+    - site extra arrays bidimensionais
+    - site extra array bidimensional
+    - site confiavel para aprender matrizes
+    - site confiavel para array bidimensional
+    - site confiavel extra para matriz
+
+
+- intent: conteudo_extra_strings
+  examples: |
+    - conteudo extra sobre strings
+    - quero saber mais sobre strings
+    - como manipular strings
+    - funções avançadas sobre strings
+    - funcoes avancadas sobre strings
+    - aprender mais sobre strings
+    - link extra strings
+    - site extra strings
+    - site extra strings
+    - site string
+    - link strings
+    - mais informacoes sobre strings
+    - informações extras sobre strings
+    - me fale mais sobre strings
+    - documentação sobre strings
+    - documentacao sobre strings
+    - conteudo extra sobre string
+    - quero saber mais sobre string
+    - como manipular string
+    - funções avançadas sobre string
+    - funcoes avancadas sobre string
+    - aprender mais sobre string
+    - link extra string
+    - site extra string
+    - site extra string
+    - site string
+    - link string
+    - mais informacoes sobre string
+    - informações extras sobre string
+    - me fale mais sobre string
+    - documentação sobre string
+    - documentacao sobre string
+    - site confiavel para aprender strings
+    - site confiavel para string
+    - site confiavel extra para string
+
+- intent: desafio_hello_world
+  examples: |
+    - desafie-me sobre hello world
+    - quero desafios de hello world
+    - desejo desafios de hello world
+    - gostaria de desafios de hello world
+    - quero aumentar a dificuldade de hello world
+    - dificulte os exercícios de hello world
+    - me desafie em hello world
+    - challenge accepted hello world
+    - me mostra o desafio de hello world
+    - desafio hello world
+    - me desafia a fazer hello world
+
+- intent: desafio_repeticao
+  examples: | 
+    - desafie-me sobre laços
+    - quero desafios de laços
+    - desejo desafios de laços
+    - gostaria de desafios de laços
+    - quero aumentar a dificuldade de laços
+    - dificulte os exercícios de laços
+    - me desafie em laços
+    - challenge accepted laços de repetição
+    - me mostra o desafio de estrutura de repetição
+    - desafio laços
+    - me desafia a fazer laços de repetição
+
+- intent: desafio_funcao
+  examples: |
+    - desafie-me sobre função
+    - quero desafios de função
+    - desejo desafios de função
+    - gostaria de desafios de função
+    - quero aumentar a dificuldade de função
+    - dificulte os exercícios de função
+    - me desafie em função
+    - challenge accepted funções
+    - me mostra o desafio de funções
+    - desafio funções
+    - me desafia a fazer funções
+
+- intent: desafio_vetores
+  examples: |
+    - desafie-me sobre vetores
+    - quero desafios de vetores
+    - desejo desafios de vetores
+    - gostaria de desafios de vetores
+    - quero aumentar a dificuldade de vetores
+    - dificulte os exercícios de vetores
+    - me desafie em vetores
+    - challenge accepted vetores
+    - me mostra o desafio de vetor
+    - desafio vetor
+    - me desafia a fazer vetores
+
+- intent: desafio_matrizes
+  examples: |
+    - desafie-me sobre matrizes
+    - quero desafios de matrizes
+    - desejo desafios de matrizes
+    - gostaria de desafios de matrizes
+    - quero aumentar a dificuldade de matrizes
+    - dificulte os exercícios de matrizes
+    - me desafie em matrizes
+    - challenge accepted matriz
+    - me mostra o desafio matriz
+    - desafio matriz
+    - me desafia a fazer matrizes
+
+- intent: desafio_input_dados
+  examples: |
+    - challenge accepted entrada de dados
+    - challenge accepted input
+    - challenge accepted input de dados
+    - desafie-me sobre entrada de dados
+    - desafie-me sobre input
+    - desafie-me sobre input de dados
+    - desafio entrada de dados
+    - desafio input
+    - desafio input de dados
+    - desejo desafios de entrada de dados
+    - desejo desafios de input
+    - desejo desafios de input de dados
+    - dificulte os exercícios de entrada de dados
+    - dificulte os exercícios de input
+    - dificulte os exercícios de input de dados
+    - gostaria de desafios de entrada de dados
+    - gostaria de desafios de input
+    - gostaria de desafios de input de dados
+    - me desafia a fazer entrada de dados
+    - me desafia a fazer input
+    - me desafia a fazer input de dados
+    - me desafie em entrada de dados
+    - me desafie em input
+    - me desafie em input de dados
+    - me mostra o desafio de entrada de dados
+    - me mostra o desafio de input
+    - me mostra o desafio de input de dados
+    - quero aumentar a dificuldade de entrada de dados
+    - quero aumentar a dificuldade de input
+    - quero aumentar a dificuldade de input de dados
+    - quero desafios de entrada de dados
+    - quero desafios de input
+    - quero desafios de input de dados
+
+- intent: desafio_variaveis
+  examples: |
+    - desafie-me variaveis
+    - quero desafios de variaveis
+    - desejo desafios de variaveis
+    - gostaria de desafios de variaveis
+    - quero aumentar a dificuldade de variaveis
+    - dificulte os exercícios de variaveis
+    - me desafie em variaveis
+    - desafio variaveis
+    - desafio int
+    - desafio bool
+    - desafio float
+    - desafio char
+    - desafio string
+    - exercicios bool
+    - exercicios variaveis
+    - exercicios int
+    - exercicios booleanos
+    - exercicio variavies
+    - exercicio variáveis
+    - me mostra o desafio variavies
+    - desafio entrada de variaveis
+    - me desafia a fazer variaveis
+
+- intent: desafio_condicionais
+  examples: |
+    - desafie-me sobre condicionais
+    - quero desafios de condicionais
+    - desejo desafios de condicionaisos
+    - gostaria de desafios de condicionaisos
+    - quero aumentar a dificuldade de condicionaisos
+    - dificulte os exercícios de condicionais
+    - me desafie em condicionais
+    - challenge accepted condicionais
+    - me mostra o desafio de condicionais
+    - desafio condicionais
+    - me desafia a fazer condicionais
+
+- intent: exemplo_condicionais
+  examples: |
+    - exemplo de if
+    - exemplo de else
+    - exemplos de estrutura condicioal
+    - exemplos de estruturas condicionais
+    - exemplos de if
+    - exemplos de else
+    - exemplo de condição
+    - exemplo condiçoes
+    - exemplos de condições
+    - modelos de if
+    - modelos de else
+    - modelos de condiçoes
+    - sintaxe de if
+    - sintaxe de else
+    - modelos de estruturas condicionais
+    - modelos de estrutura condicional
+    - modelo de if else
+    - sintaxe de estrutura condicional
+    - sintaxe de estruturas condicionais
+    - sintaxe de condição
+    - sintaxe de condições
+    - como fazer uma condição
+    - exemplifique if
+    - exemplifique estruturas condicionais
+    - exemplifique estrutura condicional
+    - exemplifique else
+    - exemplifique condicional
+    - exemplo de estruturas condicionais
+    - exemplos de estrutura condicional
+    - exemplo de condiçoes
+    - exemplo de condições
+    - exemplos condicionais
+    - como executar uma condição
+    - if na pratica
+    - else na pratica
+    - condicional na pratica
+    - demonstração de if
+    - demonstração de else
+    - demonstração de condicional
+
+- intent: exemplo_repeticao
+  examples: |
+    - exemplo de laços
+    - exemplo de estruturas de repetição
+    - exemplos de laços
+    - exemplos de estruturas de repetição
+    - exemplos de while
+    - exemplos de for
+    - exemplo de repetições
+    - exemplo de iteração
+    - exemplos de iterações
+    - modelos de laços
+    - sintaxe de laços
+    - sintaxe de iteração
+    - modelos de estruturas de repetição
+    - modelo de while
+    - sintaxe de while
+    - sintaxe de for
+    - sintaxe de iteraçao
+    - como repetir ação
+    - exemplifique laço
+    - exemplifique estruturas de repetição
+    - exemplifique for
+    - exemplifique while
+    - exemplo de estruturas de repetiçao
+    - exemplos de estruturas de repetiçao
+    - exemplo de repetiçoes
+    - exemplo de iteraçao
+    - exemplos de iteraçoes
+    - modelos de estruturas de repetiçao
+    - repetir açao
+    - exemplifique estruturas de repetiçao
+    - laços na pratica
+    - for na pratica
+    - while na pratica
+    - demonstração de laços de repetição
+    - demonstração de estruturas de repetição
+    - demonstração de for
+    - demonstração de while
+
+- intent: exemplo_variaveis
+  examples: |
+    - me dê exemplos de variaveis
+    - como usar essas variaveis?
+    - não entendi como usa a variável
+    - mas e eu faço como com variáveis?
+    - e como que uso?
+    - exemplos variáveis
+    - exemplos de variáveis
+    - me explica como usa essas variaveis
+    - me ajuda com exemplos de variáveis
+    - voce pode me ajudar com exemplos de variaveis?
+    - como variaveis funcionam
+    - exemplos variáveis
+    - exemplo variável
+    - exemplos python variáveis
+    - exemplo variável python
+    - como fazer uma variavel em python
+    - como funciona as variaveis
+    - funcionamento variaveis
+    - variáveis na prática
+    - código de exemplo de variaveis
+    - exemplo de variaveis
+    - exemplo de variavel
+    - exemplos variavel
+    - exemplos variaveis
+    - exemplos variável
+    - modelos de variavies
+    - modelos de variavel
+    - sintaxe de variaveis
+    - sintaxe de variavel
+    - sintaxe de variável
+    - como declarar variavel
+    - como declarar variaveis
+    - exemplifique variaveis
+    - exemplifique variavel
+    - variaveis na pratica
+    - variavel na pratica
+    - demonstração de variáveis
+    - demonstração de variável
+
+
+- intent: exemplo_funcao
+  examples: |
+    - exemplos de função
+    - exemplos de funções
+    - exemplo função
+    - exemplo funcao
+    - exemplo funções
+    - exemplo funcoes
+    - exemplo funcoes
+    - exemplo bloco de codigo
+    - modelo função
+    - modelo funcao
+    - modelo funções
+    - modelos funcoes
+    - modelos de bloco de codigo
+    - sintaxe de funçoes
+    - sintaxe de função
+    - sintaxe de funcoes
+    - sintaxe de funcao
+    - como declarar uma função
+    - como declarar funções
+    - exemplifique função
+    - exemplifique funções
+    - exemplifique funcao
+    - exemplifique funcoes
+    - exemplifique bloco de codigo
+    - exemplo de função
+    - exemplo de funcao
+    - exemplo de funcoes
+    - funcao na pratica
+    - função na pratica
+    - funções na pratica
+    - funcoes na pratica
+    - bloco de codigo na pratica
+    - demonstração de funções
+    - demonstração de função
+
+
+- intent: exemplo_arquivos
+  examples: |
+    - exemplo de arquivos
+    - exemplo de arquivo
+    - exemplos escrever arquivos
+    - exemplos arquivos
+    - exemplos de arquivos
+    - modelos de como escrever em arquivos
+    - modelos de como escrever em arquivo
+    - exemplo sintaxe de arquivo
+    - exemplo sintaxe de arquivos
+    - exemplo de como escrever em arquivos
+    - exemplo de como escrever em arquivo
+    - exemplifique arquivo
+    - exemplifique arquivos
+    - arquivos na pratica
+    - demonstração de arquivos
+    - demonstração de files
+    - demonstração de arquivo
+
+
+- intent: exemplo_vetores
+  examples: |
+    - exemplo de vetor
+    - exemplo de vetores
+    - exemplo de arrays
+    - exemplo array unidimensional
+    - exemplos de vetor
+    - exemplos de vetores
+    - exemplos de arrays
+    - exemplos de array unidimensional
+    - modelos de vetor
+    - modelos de vetores
+    - modelos de arrays
+    - modelos de array unidimensional
+    - sintaxe de vetor
+    - sintaxe de vetores
+    - sintaxe de arrays
+    - sintaxe de array unidimensional
+    - exemplifique vetor
+    - exemplifique vetores
+    - exemplifique arrays
+    - exemplifique array unidimensional
+    - como executar um vetor
+    - como fazer um arrays
+    - vetor na pratica
+    - vetores na pratica
+    - arrays na pratica
+    - array unidimensional na pratica
+    - demonstração de vetores
+    - demonstração de array
+    - demonstração de array unidimensional
+
+- intent: exemplo_matrizes
+  examples: |
+    - exemplo de matriz
+    - exemplo de matrizes
+    - exemplo de arrays bidimensionais
+    - exemplo array bidimensional
+    - exemplos de matriz
+    - exemplos de matrizes
+    - exemplos de arrays bidimensionais
+    - exemplos de array bidimensional
+    - modelos de matriz
+    - modelos de matrizes
+    - modelos de arrays bidimensionais
+    - modelos de array bidimensional
+    - sintaxe de matriz
+    - sintaxe de matrizes
+    - sintaxe de arrays bidimensionais
+    - sintaxe de array bidimensional
+    - exemplifique matriz
+    - exemplifique matrizes
+    - exemplifique arrays bidimensionais
+    - exemplifique array bidimensional
+    - como executar um matriz
+    - como fazer um arrays bidimensionais
+    - matriz na pratica
+    - matrizes na pratica
+    - arrays bidimensionais na pratica
+    - array bidimensional na pratica
+    - demonstração de matrizes
+    - demonstração de matriz
+    - demonstração de array bidimensional
+
+
+- intent: exemplo_importar_bibliotecas
+  examples: |
+    - exemplo importar bibliotecas
+    - importando uma library
+    - exemplo importar lib
+    - exemplo de como importar bibliotecas
+    - exemplifique bibliotecas
+    - exemplifique library
+    - exemplifique lib
+    - demonstração de lib
+    - demonstração de import
+    - demonstração de importar biblioteca
+    - demonstração de importação de library
+
+- intent: exemplo_strings
+  examples: |
+    - exemplo de strings
+    - como usar strings em python
+    - exemplo prático de strings
+    - como declarar uma strings
+    - usar tipo strings
+    - pratica strings
+    - strings na prática
+    - strings na pratica
+    - exemplo de string
+    - como usar string em python
+    - exemplo prático de string
+    - como declarar uma string
+    - usar tipo string
+    - pratica string
+    - string na prática
+    - string na pratica
+    - me de alguns exemplos de string
+    - me de alguns de strings
+    - quero alguns exemplos de strings
+    - quero alguns exemplos de string
+    - me de um exemplo de string
+    - me de um exemplo de strings
+    - demonstração de strings
+    - demonstração de string
+
+- intent: exemplo_inteiros
+  examples: |
+    - exemplo de int
+    - como usar inteiros em python
+    - exemplo prático de inteiros
+    - como declarar uma int
+    - usar tipo inteiros
+    - pratica inteiros
+    - inteiros na prática
+    - int na pratica
+    - exemplo de inteiro
+    - como usar inteiro em python
+    - exemplo prático de inteiro
+    - como declarar uma inteiro
+    - usar tipo inteiro
+    - pratica ints
+    - inteiro na prática
+    - inteiro na pratica
+    - me de alguns exemplos de ints
+    - me de alguns de inteiros
+    - quero alguns exemplos de inteiros
+    - quero alguns exemplos de inteiro
+    - me de um exemplo de inteiro
+    - me de um exemplo de inteiros
+    - demonstração de ints
+    - demonstração de inteiro
+
+- intent: exemplo_pontos_flutuantes
+  examples: |
+    - exemplo de double
+    - como usar float em python
+    - exemplo prático de pontos flutuantes
+    - como declarar uma pontos flutuantes
+    - usar tipo double
+    - pratica pontos flutuantes
+    - pontos flutuantes na prática
+    - pontos flutuantes na pratica
+    - exemplo de ponto flutuante
+    - como usar ponto flutuante em python
+    - exemplo prático de ponto flutuante
+    - como declarar uma ponto flutuante
+    - usar tipo float
+    - pratica ponto flutuante
+    - ponto flutuante na prática
+    - ponto flutuante na pratica
+    - me de alguns exemplos de float
+    - me de alguns de pontos flutuantes
+    - quero alguns exemplos de pontos flutuantes
+    - quero alguns exemplos de ponto flutuante
+    - me de um exemplo de double
+    - me de um exemplo de pontos flutuantes
+    - demonstração de pontos flutuantes
+    - demonstração de float
+
+- intent: exemplo_caracteres
+  examples: |
+    - exemplo de caracteres
+    - como usar char em python
+    - exemplo prático de caracteres
+    - como declarar uma chars
+    - usar tipo caracteres
+    - pratica char
+    - caracteres na prática
+    - caracteres na pratica
+    - exemplo de caracter
+    - como usar caracter em python
+    - exemplo prático de caracter
+    - como declarar uma caracter
+    - usar tipo chars
+    - pratica caracter
+    - caracter na prática
+    - char na pratica
+    - me de alguns exemplos de chars
+    - me de alguns de caracteres
+    - quero alguns exemplos de caracteres
+    - quero alguns exemplos de char
+    - me de um exemplo de caracter
+    - me de um exemplo de chars
+    - demonstração de caracteres
+    - demonstração de char
+
+- intent: exemplo_booleanos
+  examples: |
+    - exemplo de bool
+    - como usar booleanos em python
+    - exemplo prático de booleanos
+    - como declarar uma bools
+    - usar tipo booleanos
+    - pratica bool
+    - booleanos na prática
+    - booleanos na pratica
+    - exemplo de booleano
+    - como usar bools em python
+    - exemplo prático de booleano
+    - como declarar uma booleano
+    - usar tipo bool
+    - pratica booleano
+    - booleano na prática
+    - bools na pratica
+    - me de alguns exemplos de booleano
+    - me de alguns de booleanos
+    - quero alguns exemplos de booleanos
+    - quero alguns exemplos de bool
+    - me de um exemplo de booleano
+    - me de um exemplo de booleanos
+    - demonstração de bools
+    - demonstração de booleano
+
+- intent: exercicios_condicionais
+  examples: |
+    - exercício condicionais
+    - exercício if else
+    - exercícios condicionais
+    - exercícios if else
+    - exercicio condicionais
+    - exercicio if else
+    - exercicios condicionais
+    - exercicios if else
+    - treinar condicionais
+    - treinar if else
+    - treinamento condicionais
+    - treinamento if else
+    - testar conhecimento condicionais
+    - testar conhecimento if else
+    - uri online judge if else
+    - uri online judge condicionais
+    - testar conhecimentos if else
+    - testar conhecimentos condicionais
+    - tarefa condicionais
+    - tarefa if else
+    - dever condicionais
+    - dever if else
+    - execução condicionais
+    - execução if else
+    - prática condicionais
+    - prática if else
+    - pratica condicionais
+    - pratica if else
+    - atividade condicionais
+    - atividade if else
+    - treinamento condicionais
+    - treinamento if else
+    - exercício condicional
+    - exercícios condicional
+    - exercicios condicional
+    - exercicio condicional
+    - treinar condicional
+    - treinamento condicional
+    - testar conhecimento condicional
+    - uri online judge condicional
+    - testar conhecimentos condicional
+    - tarefa condicional
+    - dever condicional
+    - execução condicional
+    - prática condicional
+    - pratica condicional
+    - atividade condicional
+    - treinamento condicional
+    - gostaria de uns exercicios sobre estruturas condicionais
+    - dever estruturas condicionais
+    - deveres estruturas condicionais
+    - atividades estruturas condicionais
+    - dever if else
+    - deveres if else
+    - atividades if else
+    - atividade if else
+    - atividade estruturas condicionais
+    - dever estrutura condicional
+    - deveres estrutura condicional
+    - atividades estrutura condicional
+    - atividade estrutura condicional
+    - lições if else
+    - lição if else
+    - lições estruturas condicionais
+    - lição estruturas condicionais
+    - lições estrutura condicional
+    - lição estrutura condicional
+    - liçoes if else
+    - liçao if else
+    - liçoes estruturas condicionais
+    - liçao estruturas condicionais
+    - liçoes estrutura condicional
+    - liçao estrutura condicional
+
+- intent: exercicios_variaveis
+  examples: |
+    - exercício variáveis
+    - exercício variável
+    - exercícios variáveis
+    - exercícios variável
+    - exercicio variaveis
+    - exercicio variavel
+    - exercicios variaveis
+    - exercicios variavel
+    - treinar variáveis
+    - treinar variável
+    - treinamento variáveis
+    - treinamento variável
+    - testar conhecimento variáveis
+    - testar conhecimento variável
+    - uri online judge variável
+    - uri online judge variáveis
+    - testar conhecimentos variável
+    - testar conhecimentos variáveis
+    - tarefa variáveis
+    - tarefa variável
+    - dever variáveis
+    - dever variável
+    - execução variáveis
+    - execução variável
+    - prática variáveis
+    - prática variável
+    - pratica variáveis
+    - pratica variável
+    - atividade variáveis
+    - atividade variável
+    - treinamento variáveis
+    - treinamento variável
+    - exercício variáveis
+    - exercícios int
+    - exercicios float
+    - exercicio booleano
+    - treinar double
+    - treinamento float
+    - testar conhecimento int
+    - uri online judge float
+    - testar conhecimentos booleano
+    - tarefa float
+    - dever double
+    - execução int
+    - prática int
+    - pratica double
+    - atividade float
+    - treinamento double
+    - gostaria de fazer uns exercicios sobre variaveis
+    - dever variaveis
+    - deveres variaveis
+    - atividades variaveis
+    - atividade variaveis
+    - atividade variavel
+    - dever variavel
+    - deveres variavel
+    - atividades variavel
+    - atividade variavel
+    - lições variavel
+    - lição variavel
+    - lições variaveis
+    - lição variaveis
+    - lições variaveis
+    - lição variaveis
+    - liçoes variaveis
+    - liçao variaveis
+    - liçoes variável
+    - liçao variável
+    - liçoes variáveis
+    - liçao variáveis
+
+    - intent: exercicios_repeticao
+    - exercício laços
+    - exercício estruturas de repetição
+    - exercícios laços
+    - exercícios estruturas de repetição
+    - exercicio estruturas de repetiçao
+    - exercicio laços
+    - exercicios laços
+    - exercicios estruturas de repetiçao
+    - treinar laços
+    - treinar estruturas de repetição
+    - treinamento laços
+    - treinamento estruturas de repetição
+    - testar conhecimento laços
+    - testar conhecimento estruturas de repetição
+    - uri online judge laços
+    - uri online judge estruturas de repetição
+    - testar conhecimentos laços
+    - testar conhecimentos estruturas de repetição
+    - tarefa laços
+    - tarefa estruturas de repetição
+    - dever laços
+    - dever estruturas de repetição
+    - execução laços
+    - execução estruturas de repetição
+    - prática laços
+    - prática estruturas de repetição
+    - pratica laços
+    - pratica estruturas de repetição
+    - atividade laços
+    - atividade estruturas de repetição
+    - treinamento laços
+    - treinamento estruturas de repetição
+    - exercício while
+    - exercícios for
+    - exercicios while
+    - exercícios for while
+    - treinar repeticao
+    - treinar for while
+    - saber se aprendi for while
+    - saber se aprendi repetição
+    - uri for while
+    - uri repeticao
+    - testar conhecimentos for while
+    - testar conhecimentos repeticao
+    - exercicio for
+    - treinar while
+    - treinamento for
+    - testar conhecimento while
+    - uri online judge for
+    - testar conhecimentos while
+    - tarefa for
+    - dever while
+    - execução for
+    - prática while
+    - pratica for
+    - atividade while
+    - treinamento for
+    - gostaria de fazer uns exercicios sobre estruturas de repetição
+    - dever estruturas de repetiçao
+    - deveres estruturas de repetiçao
+    - atividades repetiçao
+    - dever repetição
+    - deveres repetição
+    - atividades for
+    - atividade while
+    - atividade for
+    - dever repetiçao
+    - deveres repetiçao
+    - atividades laços
+    - atividade laço
+    - lições estruturas de repetição
+    - lição estruturas de repetição
+    - lições estruturas de repetiçao
+    - lição estruturas de repetiçao
+    - lições while
+    - lição for
+    - liçoes while
+    - liçao for
+    - liçoes laços
+    - liçao laços
+    - liçoes estruturas de repetiçao
+    - liçao estruturas de repetiçao
+
+- intent: exercicios_funcao
+  examples: |
+    - exercício função
+    - exercício funcao
+    - exercícios funcoes
+    - exercícios funcao
+    - exercicio função
+    - exercicio funções
+    - exercicios função
+    - exercicios funcao
+    - treinar função funcao
+    - treinar funcoes funções
+    - treinamento funçoes
+    - treinamento funções
+    - treinamento função
+    - treinamento funcao
+    - testar função
+    - testar funcao
+    - testar funções
+    - testar funcoes
+    - uri online judge função
+    - uri online judge funcao
+    - uri online judge função
+    - uri online judge funções
+    - testar conhecimentos função
+    - testar conhecimentos funcao
+    - testar conhecimentos funções
+    - testar conhecimentos funcoes
+    - tarefa funçoes
+    - tarefa funções
+    - tarefa função
+    - tarefa funcao
+    - dever função
+    - dever funcao
+    - dever funçoes
+    - dever funções
+    - práticar função
+    - práticar funções
+    - praticar funcao
+    - praticar função
+    - praticar funções
+    - praticar funcoes
+    - atividade função
+    - atividade funcao
+    - atividade funções
+    - atividade funcoes
+    - treinamento funcao
+    - treinamento função
+    - treinamento funçoes
+    - treinar funcao funçoes função
+    - testar conhecimento função funcao
+    - testar conhecimentos função funcao
+    - tarefa funçoes função funções
+    - dever função funcao funções funcoes
+    - atividade função funcao funções funcoes
+    - gostaria de fazer uns exercicios sobre funções
+    - dever funções
+    - deveres funções
+    - atividades funçoes
+    - dever função
+    - deveres função
+    - atividades funçao
+    - atividade funçao
+    - atividade funções
+    - dever funçao
+    - deveres funçao
+    - atividades funçoes
+    - atividade funçoes
+    - lições função
+    - lição funções
+    - lições funções
+    - lição função
+    - lições funçao
+    - lição funçao
+    - liçoes funçao
+    - liçao funçao
+    - liçoes funçoes
+    - liçao funçoes
+    - liçoes funçoes
+    - liçao funçoes
+
+- intent: exercicios_arquivos
+  examples: |
+    - exercício arquivo
+    - exercício arquivos
+    - exercícios arquivo
+    - exercícios arquivo
+    - exercicio arquivos
+    - exercicio arquivo
+    - exercicios arquivos
+    - exercicios arquivo
+    - treinar arquivo
+    - treinar arquivos
+    - treinamento arquivo
+    - treinamento arquivos
+    - testar conhecimento arquivo
+    - testar conhecimento arquivos
+    - uri online judge arquivo
+    - uri online judge arquivos
+    - tarefa arquivo
+    - tarefa arquivos
+    - dever arquivo
+    - dever arquivos
+    - execução arquivo
+    - execução arquivos
+    - prática arquivo
+    - prática arquivos
+    - pratica arquivo
+    - pratica arquivos
+    - atividade arquivo
+    - atividade arquivos
+    - tarefa arquivo arquivos
+    - dever arquivo arquivos
+    - sobre como escrever em arquivo
+    - sobre como escrever em arquivos
+    - sobre como ler arquivos
+    - sobre como ler arquivo
+    - gostaria de fazer uns exercicios sobre arquivos
+    - dever arquivos
+    - deveres arquivos
+    - atividades arquivos
+    - dever arquivo
+    - deveres arquivo
+    - atividades arquivo
+    - atividade arquivos
+    - atividade arquivo
+    - dever arquivos
+    - deveres arquivos
+    - atividades arquivos
+    - lições arquivos
+    - lição arquivos
+    - lições arquivo
+    - lição arquivo
+    - lições arqv
+    - lição arqv
+    - liçoes arquivos
+    - liçao arquivos
+    - liçoes arquivo
+    - liçao arquivo
+    - liçoes arqv
+    - liçao arqv
+
+- intent: exercicios_vetores
+  examples: |
+    - exercício vetor
+    - exercício vetores
+    - exercícios arrays
+    - exercícios array unidimensional
+    - exercicio vetor
+    - exercicio vetores
+    - exercicios arrays
+    - exercicios array unidimensional
+    - treinar vetor
+    - treinar vetores
+    - treinamento arrays
+    - treinamento array unidimensional
+    - testar conhecimento vetor
+    - testar conhecimento vetores
+    - uri online judge arrays
+    - uri online judge array unidimensional
+    - testar conhecimentos vetor
+    - testar conhecimentos vetores
+    - tarefa arrays
+    - tarefa array unidimensional
+    - dever vetor
+    - dever vetores
+    - execução arrays
+    - execução array unidimensional
+    - prática vetor
+    - prática vetores
+    - pratica arrays
+    - pratica array unidimensional
+    - atividade vetor
+    - atividade vetores
+    - treinamento arrays
+    - treinamento array unidimensional
+    - gostaria de fazer uns exercicios sobre vetores
+    - dever vetor
+    - deveres vetor
+    - atividades vetor
+    - dever vetores
+    - deveres vetores
+    - atividades vetores
+    - atividade vetor
+    - atividade vetores
+    - dever array
+    - deveres array
+    - atividades array
+    - atividade array
+    - lições vetores
+    - lição vetores
+    - lições vetor
+    - lição vetor
+    - lições array
+    - lição array
+    - liçoes vetores
+    - liçao vetores
+    - liçoes vetor
+    - liçao vetor
+    - liçoes array
+    - liçao array
+
+
+- intent: exercicios_matrizes
+  examples: |
+    - exercício matriz
+    - exercício matrizes
+    - exercícios arrays bidimensionais
+    - exercícios array bidimensional
+    - exercicio matriz
+    - exercicio matrizes
+    - exercicios arrays bidimensionais
+    - exercicios array bidimensional
+    - treinar matriz
+    - treinar matrizes
+    - treinamento arrays bidimensionais
+    - treinamento array bidimensional
+    - testar conhecimento matriz
+    - testar conhecimento matrizes
+    - uri online judge arrays bidimensionais
+    - uri online judge array bidimensional
+    - testar conhecimentos matriz
+    - testar conhecimentos matrizes
+    - tarefa arrays bidimensionais
+    - tarefa array bidimensional
+    - dever matriz
+    - dever matrizes
+    - execução arrays bidimensionais
+    - execução array bidimensional
+    - prática matriz
+    - prática matrizes
+    - pratica arrays bidimensionais
+    - pratica array bidimensional
+    - atividade matriz
+    - atividade matrizes
+    - treinamento arrays bidimensionais
+    - treinamento array bidimensional
+    - gostaria de fazer uns exercicios sobre matrizes
+    - dever matriz
+    - deveres matriz
+    - atividades matriz
+    - dever matrizes
+    - deveres matrizes
+    - atividades matrizes
+    - atividade matriz
+    - atividade matrizes
+    - dever array bidimensional
+    - deveres array bidimensional
+    - atividades array bidimensional
+    - atividade array bidimensional
+    - lições matriz
+    - lição matriz
+    - lições matrizes
+    - lição matrizes
+    - lições array bidimensional
+    - lição array bidimensional
+    - liçoes matriz
+    - liçao matriz
+    - liçoes matrizes
+    - liçao matrizes
+    - liçoes array bidimensional
+    - liçao array bidimensional
+
+- intent: exercicios_strings
+  examples: |
+    - exercicios strings
+    - treinar strings
+    - testar conhecimentos strings
+    - link para exercicios strings
+    - uri strings
+    - quero treinar strings
+    - atividade strings
+    - atividade pratica strings
+    - exercicio strings
+    - contest strings
+    - responder pergunstas strings
+    - estudar strings
+    - dever strings
+    - exercicios string
+    - treinar string
+    - testar conhecimentos string
+    - link para exercicios string
+    - uri string
+    - quero treinar string
+    - atividade string
+    - atividade pratica string
+    - exercicio string
+    - contest string
+    - responder perguntas string
+    - estudar string
+    - dever string
+    - gostaria de treinar strings
+    - gostaria de treinar string
+    - me de alguns exercicios sobre string
+    - me de alguns exercicios sobre strings
+    - dever strings
+    - deveres strings
+    - atividades strings
+    - dever string
+    - deveres string
+    - atividades string
+    - atividade string
+    - atividade strings
+    - lições string
+    - lição string
+    - lições strings
+    - lição strings
+    - liçoes string
+    - liçao string
+    - liçoes strings
+    - liçao strings
+
+- intent: intent_utter_sobre_vaga
+  examples: |
+    - explique sobre
+    - básico sobre isso
+    - basico sobre isso
+    - o que é isso
+    - o que são
+    - o que e isso
+    - o que sao
+    - sobre isso
+    - me defina
+    - qual a definição
+    - explique
+    - qual a explicação disso
+    - descreva isso
+    - descreva
+    - qual a descrição disso
+    - qual o conceito 
+    - conceito disso
+    - resuma 
+    - resumo disso
+    - resume isso
+
+- intent: intent_utter_exemplo_vaga
+  examples: |
+    - me dê um exemplo 
+    - me de exemplos
+    - exemplo disso
+    - exemplos 
+    - modelos
+    - me dê um modelo
+    - sintaxe disso
+    - mostre a sintaxe
+    - mostre um exemplo
+
+- intent: intent_utter_codigo_em_python_vaga
+  examples: |
+    - código
+    - códipo python
+    - me mostre em python
+    - exemplo prático
+    - exemplo pratico
+    - no python
+    - em código
+    - em codigo
+    - código em python
+    - codigo em python
+    - implementação
+    - implementacao
+    - exemplifique em código
+    - exemplifique em codigo
+    - como funciona no código
+    - como funcionam no codigo
+    - implemente um código
+    - implemente um exemplo
+    - me mostre um código
+    - demonstre na prática
+    - demonstre na pratica
+    - demonstre um código em python
+
+- intent: intent_utter_exercicios_vaga
+  examples: |
+    - exercícios disso
+    - exercicio disso
+    - treinar isso
+    - me dê um treinamento
+    - me de uma atividade
+    - treinamento disso
+    - testar conhecimento do assunto
+    - testar conhecimento do conteúdo
+    - tarefa disso 
+    - me passe uma atividade
+    - prática disso
+    - quero exercícios
+
+- intent: intent_utter_conteudo_extra_vaga
+  examples: |
+    - conteúdo adicional disso
+    - conteúdo adicional sobre isso
+    - conteudo adicional disso
+    - conteudo adicional sobre isso
+    - conteudo extra
+    - conteúdo extra
+    - mais sobre isso
+    - outra fonte disso
+    - complemente esse conteúdo
+    - complemente isso
+    - complementar o conteúdo
+    - complementar assunto discutido
+    - suplementar o assunto
+    - suplementar isso
+
+- intent: intent_utter_desafio_vaga
+  examples: |
+    - desafie-me
+    - quero desafios
+    - desejo desafios
+    - gostaria de desafios
+    - quero aumentar a dificuldade
+    - dificulte os exercícios
+    - me desafie
+    - challenge accepted
+    - me mostra o desafio
+    - me mostre o desafio
+    - desafio
+    - me desafia
+
+
+- intent: sobre_python
+  examples: |
+    - sobre python
+    - acerca de python
+    - definição python
+    - definiçao python
+    - explique python
+    - explicação python
+    - explicaçao pythons
+    - descreva python
+    - descrição python
+    - significado python
+    - conceito python
+    - o que é python
+    - o que e python
+    - defina pyhton
+    - quando python foi criado
+    - quem é o criador do python
+    - pai do python
+    - ano python surgiu
+    - resuma python
+    - resumo python
+    - resume python
+
+- intent: sobre_aix
+  examples: |
+    - quem é você
+    - quem e voce
+    - sobre chatbot
+    - diga sobre chatbot
+    - quem é aix
+    - quem e aix
+    - o que e aix
+    - o que é aix
+    - quais suas funcionalidades
+    - qual seu proposito
+    - quem é vc
+    - quem e vc
+    - como você me ajuda
+    - sobre o chatbode
+    - descreva voce
+    - descreva vc
+    - aix
+    - cabra
+    - chatbode
+    - chatbot
+    - conheço
+    - curiosidade aix
+    - cabrita
+    - bode
+    - o que você é
+    - o que voce e
+    - o que vc e
+    - o que vc é
+    - que animal você é
+    - que animal voce e
+    - que animal vc e
+    - que animal vc é
+    - sobre aix
+    - sobre chatbode
+    - quem é você
+    - quem e voce
+    - quem é vc
+    - quem e vc
+    - who are you
+    - what are you
+    - what animal are you
+
+- intent: sobre_condicionais
+  examples: |
+    - básico sobre if
+    - básico sobre else
+    - básico sobre condicional
+    - basico sobre if
+    - basico sobre else
+    - basico sobre condicional
+    - elsif
+    - condicional
+    - estrutura condicional
+    - montar um if
+    - montar um else
+    - estruturas condicionais
+    - condiçao
+    - condição
+    - condicionais
+    - o que é if
+    - o que é else
+    - o que é condicional
+    - o que e if
+    - o que e else
+    - o que e condicional
+    - sobre condicionais
+    - acerca de condicionais
+    - defina condicionais
+    - defina condicional
+    - definição condicionais
+    - definiçao condicionais
+    - explique condicionais
+    - explicação condicionais
+    - explicaçao condicionais
+    - descreva condicionais
+    - descrição condicionais
+    - significado condicionais
+    - conceito condicionais
+    - o que são condicionais
+    - o que sao condicionais
+    - defina condicionais
+    - resuma condicionais
+    - resumo condicionais
+    - resume condicionais
+    - sobre condicional
+    - acerca de condicional
+    - definição condicional
+    - definiçao condicional
+    - explique condicional
+    - explicação condicional
+    - explicaçao condicional
+    - descreva condicional
+    - descrição condicional
+    - significado condicional
+    - conceito condicional
+    - o que são condicional
+    - o que sao condicional
+    - defina condicional
+    - resuma condicional
+    - resumo condicional
+    - resume condicional
+
+- intent: sobre_repeticao
+  examples: |
+    - reproduzir uma ação
+    - definiçao estruturas de repetiçao
+    - loop infinito
+    - definir estruturas de repetiçao
+    - como repetir uma acao
+    - o que são laços
+    - explique estruturas de repetiçao
+    - repetir
+    - loop
+    - iterar
+    - iteração
+    - laços
+    - repetições
+    - iterador
+    - while
+    - for
+    - laço
+    - básico sobre while
+    - básico sobre for
+    - básico sobre laços
+    - basico sobre while
+    - basico sobre for
+    - basico sobre laços
+    - faz um while
+    - faz um for
+    - estrutura de repetição
+    - estrutura de repetiçao
+    - estrutura de repetições
+    - estrutura de repetiçoes
+    - montar um while
+    - montar um for
+    - monte um while
+    - monte um for
+    - o que é while
+    - o que é for
+    - o que são laços
+    - o que e while
+    - o que e for
+    - o que sao laços
+    - sobre laços
+    - sobre estrutura de repetição
+    - sobre estrutura de repetiçao
+    - sobre estrutura de repetições
+    - sobre estrutura de repetiçoes
+    - acerca de laços
+    - defina laços
+    - definição laços
+    - definiçao laços
+    - explique laços
+    - explicação laços
+    - explicaçao laços
+    - descreva laços
+    - descrição laços
+    - significado laços
+    - conceito laços
+    - o que são laços
+    - o que sao laços
+    - defina laços
+    - resuma laços
+    - resumo laços
+    - resume laços
+    - acerca de estrutura de repetição
+    - definição estrutura de repetição
+    - definiçao estrutura de repetição
+    - explique estrutura de repetição
+    - explicação estrutura de repetição
+    - explicaçao estrutura de repetição
+    - descreva estrutura de repetição
+    - descrição estrutura de repetição
+    - significado estrutura de repetição
+    - conceito estrutura de repetição
+    - o que são estrutura de repetição
+    - o que sao estrutura de repetiçao
+    - defina estrutura de repetição
+    - resuma estrutura de repetição
+    - resumo estrutura de repetição
+    - resume estrutura de repetição
+
+- intent: sobre_variaveis
+  examples: |
+    - declarar
+    - declaração
+    - declaraçao
+    - atribuir valor
+    - o que são variáveis
+    - o que sao variaveis
+    - variáveis básico
+    - como uso variáveis
+    - como uso variaveis
+    - variáveis
+    - variaveis
+    - variaveis primitivas
+    - variável
+    - variavel
+    - definiçao variáveis
+    - definir variáveis
+    - o que são variáveis
+    - explique variáveis
+    - básico sobre variáveis
+    - basico sobre variaveis
+    - básico sobre variável
+    - basico sobre variavel
+    - o que é variável
+    - o que é variável
+    - o que são variáveis
+    - o que e variavel
+    - o que e variavel
+    - o que sao variaveis
+    - sobre variável
+    - sobre variavel
+    - sobre variáveis
+    - sobre variaveis
+    - acerca de variável
+    - defina variável
+    - definição variável
+    - definiçao variável
+    - explique variável
+    - explicação variável
+    - explicaçao variável
+    - descreva variável
+    - descrição variável
+    - significado variável
+    - conceito variável
+    - o que são variável
+    - o que sao variável
+    - defina variável
+    - resuma variável
+    - resumo variável
+    - resume variável
+    - acerca de variáveis
+    - definição variáveis
+    - definiçao variáveis
+    - explique variáveis
+    - explicação variáveis
+    - explicaçao variaveis
+    - descreva variáveis
+    - descrição variáveis
+    - significado variáveis
+    - conceito variáveis
+    - o que são variáveis
+    - o que sao variaveis
+    - defina variáveis
+    - resuma variáveis
+    - resumo variáveis
+    - resume variáveis
+    - acerca de variavel
+    - defina variavel
+    - definição variavel
+    - definiçao variavel
+    - explique variavel
+    - explicação variavel
+    - explicaçao variavel
+    - descreva variavel
+    - descrição variavel
+    - significado variavel
+    - conceito variavel
+    - o que é variável
+    - o que e variável
+    - defina variavel
+    - resuma variavel
+    - resumo variavel
+    - resume variavel
+    - acerca de variaveis
+    - definição variaveis
+    - definiçao variaveis
+    - explique variaveis
+    - descreva variaveis
+    - descrição variaveis
+    - significado variaveis
+    - conceito variaveis
+    - defina variaveis
+    - resuma variaveis
+    - resumo variaveis
+    - resume variaveis
+
+- intent: sobre_inteiros
+  examples: |
+    - o que são pontos inteiros
+    - inteiros
+    - int
+    - inteiro
+    - integer
+    - números inteiros
+    - números positivos
+    - números negativos
+    - numeros inteiros
+    - numeros positivos
+    - numeros negativos
+    - numeros sem precisão decimal
+    - o que são inteiros
+    - o que sao inteiros
+    - inteiros básico
+    - como uso inteiros
+    - como uso inteiro
+    - inteiros
+    - inteiro
+    - definiçao inteiros
+    - definir inteiros
+    - o que são inteiros
+    - explique inteiros
+    - básico sobre inteiros
+    - basico sobre inteiros
+    - o que sao inteiros
+    - o que é inteiro
+    - o que são inteiros
+    - o que e inteiro
+    - sobre inteiros
+    - sobre inteiro
+    - acerca de inteiros
+    - defina inteiros
+    - definição inteiro
+    - definiçao inteiro
+    - definir inteiro
+    - explique inteiro
+    - explicação inteiro
+    - explicaçao inteiro
+    - descreva inteiro
+    - descrição inteiro
+    - significado inteiro
+    - conceito inteiro
+    - o que são inteiro
+    - o que sao inteiro
+    - defina inteiro
+    - resuma inteiro
+    - resumo inteiro
+    - resume inteiro
+
+- intent: sobre_pontos_flutuantes
+  examples: |
+    - o que são pontos flutuantes
+    - o que é um float
+    - o que e um ponto flutuante
+    - variável com casas decimais
+    - registrar pi numa variavel
+    - pontos flutuantes
+    - float
+    - double
+    - pontos flutuantes com o dobro de precisão
+    - números com casas decimais
+    - numeros com casas decimais
+    - numeros fracionados
+    - frações
+    - fraçoes
+    - números racionais
+    - numeros racionais
+    - racionais
+    - casas decimais
+    - fração
+    - o que sao pontos flutuantes
+    - float básico
+    - double básico
+    - como uso float
+    - como uso double
+    - definiçao pontos flutuantes
+    - definir pontos flutuantes
+    - o que são pontos flutuantes
+    - explique pontos flutuantes
+    - básico sobre pontos flutuantes
+    - basico sobre pontos flutuantes
+    - o que sao pontos flutuantes
+    - o que é ponto flutuante
+    - o que são pontos flutuantes
+    - o que e ponto flutuante
+    - sobre ponto flutuante
+    - sobre pontos flutuantes
+    - acerca de pontos flutuantes
+    - defina pontos flutuantes
+    - definição pontos flutuantes
+    - definiçao pontos flutuantes
+    - definir pontos flutuantes
+    - explique pontos flutuantes
+    - explicação pontos flutuantes
+    - explicaçao pontos flutuantes
+    - descreva pontos flutuantes
+    - descrição pontos flutuantes
+    - significado pontos flutuantes
+    - conceito pontos flutuantes
+    - o que são pontos flutuantes
+    - o que sao pontos flutuantes
+    - defina pontos flutuantes
+    - resuma pontos flutuantes
+    - resumo pontos flutuantes
+    - resume pontos flutuantes
+
+- intent: sobre_caracteres
+  examples: |
+    - o que são caracteres
+    - o que é um caractere
+    - caracter
+    - char
+    - caractere
+    - variável caracter
+    - variavel char
+    - alfanuméricos e caracteres especiais
+    - caracteres
+    - caractéres
+    - letras
+    - como uma variável guarda letras
+    - o que sao caracteres
+    - caracteres básico
+    - caracteres básico
+    - como uso caracteres
+    - como uso caracter
+    - definiçao caracteres
+    - definir caracteres
+    - explique caracteres
+    - básico sobre caracteres
+    - basico sobre caracteres
+    - o que é caractere
+    - o que e caractere
+    - sobre caracteres
+    - sobre caractere
+    - acerca de caracteres
+    - defina caracteres
+    - definição caracteres
+    - definiçao caracteres
+    - definir caracteres
+    - explique caracteres
+    - explicação caracteres
+    - explicaçao caracteres
+    - descreva caracteres
+    - descrição caracteres
+    - significado caracteres
+    - conceito caracteres
+    - defina caracteres
+    - resuma caracteres
+    - resumo caracteres
+    - resume caracteres
+
+- intent: sobre_booleanos
+  examples: |
+    - o que são booleanos
+    - bool
+    - true e false
+    - verdadeiro ou falso
+    - o que é um booleano
+    - variável booleana
+    - booleano
+    - booleana
+    - verdadeira e falsa
+    - verdadeira ou falsa
+    - booleanos
+    - números booleanos
+    - numeros booleanos
+    - o que são booleanos
+    - o que sao booleanos
+    - booleanos básico
+    - como uso booleanos
+    - como uso booleanos
+    - definiçao booleanos
+    - definir booleanos
+    - explique booleanos
+    - básico sobre booleanos
+    - basico sobre booleanos
+    - sobre booleanos
+    - acerca de booleanos
+    - defina booleanos
+    - definição booleanos
+    - definiçao booleanos
+    - definir booleanos
+    - explique booleanos
+    - explicação booleanos
+    - explicaçao booleanos
+    - descreva booleanos
+    - descrição booleanos
+    - significado booleanos
+    - conceito booleanos
+    - defina booleanos
+    - resuma booleanos
+    - resumo booleanos
+    - resume booleanos
+
+- intent: sobre_funcao
+  examples: |
+    - reproduzir uma função
+    - definiçao função
+    - definiçao funcao
+    - definiçao funções
+    - definiçao funcoes
+    - bloco de funções
+    - bloco de funcao
+    - bloco de código
+    - definir funcao
+    - definir funções
+    - definir função
+    - o que são funções
+    - o que são funcoes
+    - explique função
+    - explique funcao
+    - explique funçoes
+    - explique funções
+    - argumento
+    - retorno
+    - retornar
+    - básico sobre função
+    - básico sobre funções
+    - básico sobre funcoes
+    - basico sobre funcao
+    - basico sobre bloco de código
+    - basico sobre repetição de codigo
+    - repetição de codigo
+    - fazer uma função
+    - fazer uma funcao
+    - fazer funções
+    - fazer funcoes
+    - montar uma função
+    - montar uma funcao
+    - montar funções
+    - montar funcoes
+    - o que é função
+    - o que é funcao
+    - o que são funções
+    - o que sao funcoes
+    - sobre funções
+    - sobre função
+    - sobre funcoes
+    - sobre funcao
+    - sobre repeticao de codigo
+    - sobre repetição de código
+    - acerca de funcao
+    - acerca de função
+    - acerca de funções
+    - acerca de funções
+    - defina função funcao
+    - definição função
+    - definiçao funcao
+    - definiçao funções
+    - definiçao funcoes
+    - explicação funcao
+    - explicaçao função
+    - explicaçao funções funcoes
+    - descreva função funcao
+    - descreva funções funcao
+    - descrição funções funcao
+    - significado função
+    - significado funcao
+    - significado funções funcoes
+    - conceito função
+    - conceito funcao
+    - conceito funções funcoes
+    - defina função
+    - defina funcao
+    - defina funções
+    - defina funcoes
+    - resuma função
+    - resumo funcao
+    - como fazer uma função em python
+    - como fazer um funcao em python
+    - como criar uma funcao
+    - como criar uma função
+    - como fazer funcoes em python
+    - como criar funcoes
+    - o que sao funcoes
+    - o que e funcao
+    - como utilizar funcoes
+    - como utilizar funcoes no python
+
+
+- intent: sobre_arquivos
+  examples: |
+    - básico sobre arquivo
+    - básico sobre arquivos
+    - básico sobre ler arquivos
+    - basico sobre esquever arquivo
+    - basico sobre escrever em arquivos
+    - basico sobre ler arquvios
+    - montar um arquvio
+    - montar um arquvios
+    - o que é arquivo
+    - o que são arquivos
+    - sobre arquivos
+    - sobre arquivo
+    - acerca arquivo
+    - acerca arquivos
+    - defina arquivo
+    - defina arquivos
+    - definição arquivos
+    - definiçao arquivo
+    - explique arquivo
+    - explique arquivos
+    - explique como ler arquivos
+    - explicação arquivos
+    - explicaçao arquivo
+    - descreva arquivos
+    - descrição arquivo
+    - significado arquivo
+    - conceito arquivo
+    - resuma arquivo
+    - resuma arquivos
+    - resume arquivos
+    - resume arquivo
+    - descreva arquivos
+    - descrição arquivos
+    - significado arquivo
+    - significado arquivos
+    - conceito arquivos
+    - como usar arquivos em python
+    - como abrir arquivos em python
+    - como usar arquivos
+
+- intent: sobre_vetores
+  examples: |
+    - o que são vetores
+    - vetor
+    - arrays
+    - array unidimensional
+    - vetores
+    - o que é um vetor
+    - o que são vetores
+    - o que sao arrays
+    - vetores básico
+    - como uso array unidimensional
+    - como uso arrays
+    - definiçao vetores
+    - definir vetor
+    - explique vetores
+    - básico sobre arrays
+    - basico sobre array unidimensional
+    - sobre array unidimensional
+    - acerca de vetor
+    - defina vetores
+    - definição arrays
+    - definiçao vetor
+    - definir array unidimensional
+    - explique vetor
+    - explicação vetores
+    - explicaçao arrays
+    - descreva vetor
+    - descrição vetores
+    - significado array unidimensional
+    - conceito vetor
+    - defina array unidimensional
+    - resuma arrays
+    - resumo vetores
+    - resume vetor
+
+- intent: sobre_matrizes
+  examples: |
+    - o que são matrizes
+    - matriz
+    - arrays bidimensionais
+    - array bidimensional
+    - matrizes
+    - o que é um matriz
+    - o que são matrizes
+    - o que sao arrays bidimensionais
+    - matrizes básico
+    - como uso array bidimensional
+    - como uso arrays bidimensionais
+    - definiçao matrizes
+    - definir matriz
+    - explique matrizes
+    - básico sobre arrays bidimensionais
+    - basico sobre array bidimensional
+    - sobre array bidimensional
+    - acerca de matriz
+    - defina matrizes
+    - definição arrays bidimensionais
+    - definiçao matriz
+    - definir array bidimensional
+    - explique matriz
+    - explicação matrizes
+    - explicaçao arrays bidimensionais
+    - descreva matriz
+    - descrição matrizes
+    - significado array bidimensional
+    - conceito matriz
+    - defina array bidimensional
+    - resuma arrays bidimensionais
+    - resumo matrizes
+    - resume matriz
+
+- intent: sobre_hello_world
+  examples: |
+    - primeiro programa em python
+    - como fazer um hello world
+    - printar texto
+    - mostrar texto
+    - fazer ola mundo
+    - como mostrar texto no terminal
+    - fazer print
+    - printar no terminal
+    - imprimir
+    - hello world
+    - básico hello world
+    - basico hello world
+    - basico sobre hello world
+    - basico sobre hello world
+    - basico sobre print
+    - print
+    - montar um hello world
+    - montar um print
+    - fazer o programa escrever
+    - o que é hello world
+    - o que é print
+    - o que e hello world
+    - o que e print
+    - o que e printar
+    - sobre hello world
+    - acerca hello world
+    - defina hello world
+    - defina print
+    - definição hello world
+    - definiçao hello world
+    - explique hello world
+    - explicação hello world
+    - explicaçao hello world
+    - descreva hello world
+    - descrição hello world
+    - significado hello world
+    - conceito hello world
+    - defina hello world
+    - resuma hello world
+    - resumo hello world
+    - resume hello world
+    - sobre hello world
+    - acerca de hello world
+
+- intent: sobre_importar_bibliotecas
+  examples: |
+    - como importar bibliotecas
+    - como utilizar bibliotecas
+    - import
+    - library
+    - importar lib
+    - adicionar funções
+    - funcoes extras
+    - funcao nao encontrada
+    - fazer biblioteca
+    - biblioteca
+    - básico biblioteca
+    - basico biblioteca
+    - basico sobre biblioteca
+    - básico sobre biblioteca
+    - basico sobre funçao extra
+    - montar uma biblioteca
+    - montar uma função
+    - o que é biblioteca
+    - o que e biblioteca
+    - sobre biblioteca
+    - acerca biblioteca
+    - defina biblioteca
+    - definição biblioteca
+    - definiçao biblioteca
+    - explique biblioteca
+    - explicação biblioteca
+    - explicaçao biblioteca
+    - descreva biblioteca
+    - descrição biblioteca
+    - significado biblioteca
+    - conceito biblioteca
+    - resuma biblioteca
+    - resumo biblioteca
+    - resume biblioteca
+    - acerca de biblioteca
+    - sobre bibliotecas
+    - acerca bibliotecas
+    - defina bibliotecas
+    - definição bibliotecas
+    - definiçao bibliotecas
+    - explique bibliotecas
+    - explicação bibliotecas
+    - explicaçao bibliotecas
+    - descreva bibliotecas
+    - descrição bibliotecas
+    - significado bibliotecas
+    - conceito bibliotecas
+    - resuma bibliotecas
+    - resumo bibliotecas
+    - resume bibliotecas
+    - acerca de bibliotecas
+
+- intent: sobre_instalar_python
+  examples: |
+    - como instalar o python
+    - como saber se tenho o python instalado
+    - qual a versão do meu python
+    - qual a versao do meu python
+    - meu so é de quantos bits
+    - qual os bits do meu sistema operacional
+    - como configurar para programar em python
+    - configurar o ambiente
+    - instalar dependencias python
+    - instalar dependências python
+    - instalar python
+    - instalação python
+    - instalaçao python
+    - download python
+    - montar ambiente python
+    - sobre instalar python
+    - sobre instalação python
+    - sobre instalaçao python
+    - acerca de instalaçao python
+    - explique instalar python
+    - explicação instalar python
+    - explicaçao instalar python
+    - IDE
+    - ide
+    - como instalar python
+    - acerca de instalação python
+    - descreva instalação python
+    - descrição instalação python
+    - passo a passo instalar python
+    - resuma instalação python
+    - resumo passo a passo python
+    - resume instalaçao python
+
+- intent: sobre_strings
+  examples: |
+    - o que são strings
+    - o que sao strings
+    - strings
+    - me ajude com strings
+    - dúvidas sobre strings
+    - duvidas sobre strings
+    - pra que serve strings
+    - qual a utilidade de uma string
+    - tipo primitivo string
+    - definicao de string
+    - definição de string
+    - definicão de string
+    - definiçao de string
+    - não sei o que é string
+    - nao sei o que e string
+    - em qual variavel devo guardar um texto
+    - como armazenar texto no python
+    - salvar texto em python
+    - str python
+    - o que é str
+    - o que e str
+    - fazer uma frase
+    - string
+    - frase
+    - definir string
+    - como montar uma frase
+    - explique strings
+    - básico sobre strings
+    - básico sobre string
+    - básico sobre str
+    - basico sobre strings
+    - basico sobre string
+    - basico sobre str
+    - faz uma frase
+    - faz uma string
+    - montar uma string
+    - montar umas strings
+    - monte uma string
+    - monte umas strings
+    - o que é string
+    - o que é str
+    - o que são strings
+    - o que e string
+    - o que e str
+    - o que sao strings
+    - sobre strings
+    - sobre string
+    - sobre str
+    - acerca strings
+    - defina string
+    - definição string
+    - definiçao string
+    - explique string
+    - explicação strings
+    - explicaçao strings
+    - descreva strings
+    - descrição strings
+    - significado strings
+    - conceito strings
+    - defina strings
+    - resuma strings
+    - resumo strings
+    - resume strings
+    - acerca strings
+    - definição strings
+    - definiçao strings
+    - explique strings
+    - explicação string
+    - explicaçao string
+    - descreva string
+    - descrição string
+    - significado string
+    - conceito string
+    - defina string
+    - resuma string
+    - resumo string
+    - resume string
+
+- intent: sobre_stack_overflow
+  examples: |
+    - o que é stack overflow
+    - sobre stack overflow
+    - o que o stack overflow faz
+    - fórum de dúvidas
+    - não sei sobre stack overflow
+    - como usar o stack overflow
+    - fórum de perguntas e respostas
+    - stack overflow
+    - stackoverflow
+    - stack over flow
+    - me explique o que é stackoverflow
+    - como funciona o stack overflow
+    - dúvidas stack overflow
+    - não entendi o que é stackoverflow
+    - ensine sobre stack overflow
+    - onde tirar dúvidas
+
+- intent: sobre_input_dados
+  examples: |
+    - acerca de entrada de dados
+    - acerca de input
+    - acerca de input de dados
+    - acerca de scanf
+    - conceito entrada de dados
+    - conceito input
+    - conceito input de dados
+    - conceito scanf
+    - defina entrada de dados
+    - defina entrada de dados
+    - defina input
+    - defina input
+    - defina input de dados
+    - defina input de dados
+    - defina scanf
+    - defina scanf
+    - definiçao entrada de dados
+    - definiçao input
+    - definiçao input de dados
+    - definiçao scanf
+    - definição entrada de dados
+    - definição input
+    - definição input de dados
+    - definição scanf
+    - descreva entrada de dados
+    - descreva input
+    - descreva input de dados
+    - descreva scanf
+    - descrição entrada de dados
+    - descrição input
+    - descrição input de dados
+    - descrição scanf
+    - explicaçao entrada de dados
+    - explicaçao input
+    - explicaçao input de dados
+    - explicaçao scanf
+    - explicação entrada de dados
+    - explicação input
+    - explicação input de dados
+    - explicação scanf
+    - explique entrada de dados
+    - explique input
+    - explique input de dados
+    - explique scanf
+    - o que e entrada de dados
+    - o que e input
+    - o que e input de dados
+    - o que e scanf
+    - o que sao entrada de dados
+    - o que sao input
+    - o que sao input de dados
+    - o que sao scanf
+    - o que são entrada de dados
+    - o que são input
+    - o que são input de dados
+    - o que são scanf
+    - o que é entrada de dados
+
+
+- intent: login_no_uva
+  examples: |
+    - quero fazer login no UVa
+    - me logue no UVa
+    - faça login no UVa
+    - conectar com o UVa
+    - login no UVA
+    - conectar ao UVa
+    - logar no uva
+    - quero me conectar ao UVa
+    - conecte-se ao uva
+    - conexão no uva
+    - login no juiz online
+    - fazer conexão no uva
+    - login uva
+    - logar no juiz online
+
+- intent: submissao_de_exercicio
+  examples: |
+    - quero submeter um exercicio
+    - enviar questão para o UVA
+    - submeter uma questão
+    - enviar meu código para o uva
+    - dar submit numa questão
+    - enviar exercicio
+    - finalizar questão do UVA
+    - submeter exercicio no uva
+    - submeter exercício
+    - submeter exercicio
+    - enviar exercício
+    - validar meu código
+    - verificar meu exercicio
+    - enviar exercicio para o uva
+    - submeter meu código
+    - submissão UVa
+    - enviar para o uva
+
+- intent: feedback_uva
+  examples: |
+    - ultima submissao
+    - resposta do exercicio
+    - ultima resposta
+    - feedback UVa
+    - feedback do último exercício
+    - resposta da ultima submissão
+    - feedback do exercicio
+    - resposta do ultimo envio
+    - resultado da questão
+    - ultimo exercicio enviado
+    - ultimo envio
+
+- intent: inform
+  examples: |
+    - meu usuário é [iuri_severo](username)
+    - meu login [hey_listen](username)
+    - meu id é [larissa123](username)
+    - username: [andrezingameplays](username)
+    - [andrezingames](username)
+    - [iuri123s](username)
+    - [joao_lucas](username)
+    - [pedro_rodrigo](username)
+    - [cap_america10](username)
+    - [iron_man9](username)
+    - [GoTeToP](username)
+    - [marquinhos1000dog](username)
+    - [kamilla_costa](username)
+    - [yoshida-eduardo](username)
+    - [gui_marques](username)
+    - [lucasvitor](username)
+    - password: [147258369](password)
+    - minha senha é [123456789](password)
+    - meu password [abc123654cba](password)
+    - minha chave é [ABC123](password)
+    - [iurizin123](password)
+    - [andrezintop](password)
+    - [159iuri951](password)
+    - [abcd1234abcd](password)
+    - [joaozinhotop](password)
+    - [senha](password)
+    - [password](password)
+    - [PaSsWoRd](password)
+    - [sEnHa](password)
+    - [algo123interessante456](password)
+    - [1337LeeT](password)
+    - [123$asd@fff&](password)
+    - esse é meu código [asdsadhbfgahsd](codigo)
+    - [asjdhaudh](codigo)
+    - meu código [smmn nafdasdf](codigo)
+    - submeta esse código [meu código](codigo)
+    - codigo para submissão [codigo em python](codigo)
+    - submeter [sdhahsbafgg](codigo)
+    - problema número [11459](problema)
+    - [12345](problema)
+    - questão [54321](problema)
+    - número da questão [9876](problema)
+    - problema [4456](problema)
+    - exercicio [5674](problema)
+    - linguagem [1](linguagem)
+    - linguagem [2](linguagem)
+    - linguagem [3](linguagem)
+    - linguagem [4](linguagem)
+    - linguagem [5](linguagem)
+    - linguagem [6](linguagem)
+

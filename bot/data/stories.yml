@@ -1,115 +1,2004 @@
 version: "2.0"
 stories:
-- story: cumprimentar
+- story: pesquisar_no_stackoverflow
+  steps:
+  - intent: pesquisar
+  - action: utter_pesquisar
+
+
+- story: pesquisar_no_stackoverflow
+  steps:
+  - intent: pesquisar
+  - action: utter_pesquisar
+  - intent: manter_conversa
+  - action: utter_manter_conversa
+
+
+- story: utter_sobre_vaga
+  steps:
+  - intent: sobre_vaga
+  - action: utter_sobre_vaga
+
+- story: utter_sobre_vaga2
+  steps:
+  - intent: sobre_vaga
+  - action: utter_sobre_vaga
+  - intent: exemplo_vaga
+  - action: utter_exemplo_vaga
+
+
+- story: utter_exemplo_vaga
+  steps:
+  - intent: exemplo_vaga
+  - action: utter_exemplo_vaga
+
+- story: utter_exemplo_vaga2
+  steps:
+  - intent: exemplo_vaga
+  - action: utter_exemplo_vaga
+  - intent: exercicios_vaga
+  - action: utter_exercicios_vaga
+
+
+- story: utter_exercicios_vaga
+  steps:
+  - intent: exercicios_vaga
+  - action: utter_exercicios_vaga
+
+- story: utter_exercicios_vaga2
+  steps:
+  - intent: exercicios_vaga
+  - action: utter_exercicios_vaga
+  - intent: conteudo_extra_vaga
+  - action: utter_conteudo_extra_vaga
+
+
+- story: utter_conteudo_extra_vaga
+  steps:
+  - intent: conteudo_extra_vaga
+  - action: utter_conteudo_extra_vaga
+
+- story: utter_conteudo_extra_vaga2
+  steps:
+  - intent: conteudo_extra_vaga
+  - action: utter_conteudo_extra_vaga
+  - intent: manter_conversa
+  - action: utter_manter_conversa
+
+
+- story: utter_desafio_vaga
+  steps:
+  - intent: desafio_vaga
+  - action: utter_desafio_vaga
+
+- story: utter_desafio_vaga2
+  steps:
+  - intent: desafio_vaga
+  - action: utter_desafio_vaga
+  - intent: manter_conversa
+  - action: utter_manter_conversa
+
+
+- story: codigo_em_python_input_dados
+  steps:
+  - intent: codigo_em_python_input_dados
+
+  - action: utter_codigo_em_python_input_dados
+
+- story: codigo_em_python_input_dados2
+  steps:
+  - intent: codigo_em_python_input_dados
+
+  - action: utter_codigo_em_python_input_dados
+  - intent: sobre_variaveis
+
+  - action: utter_sobre_variaveis
+    
+- story: codigo_em_python_variaveis
+  steps:
+  - intent: codigo_em_python_variaveis
+
+  - action: utter_codigo_em_python_variaveis
+
+- story: codigo_em_python_variaveis2
+  steps:
+  - intent: codigo_em_python_variaveis
+
+  - action: utter_codigo_em_python_variaveis
+  - intent: sobre_inteiros
+
+  - action: utter_sobre_inteiros
+
+- story: codigo_em_python_inteiros
+  steps:
+  - intent: codigo_em_python_inteiros
+
+  - action: utter_codigo_em_python_inteiros
+
+- story: codigo_em_python_inteiros2
+  steps:
+  - intent: codigo_em_python_inteiros
+
+  - action: utter_codigo_em_python_inteiros
+  - intent: sobre_pontos_flutuantes
+
+  - action: utter_sobre_pontos_flutuantes
+
+- story: codigo_em_python_pontos_flutuantes
+  steps:
+  - intent: codigo_em_python_pontos_flutuantes
+
+  - action: utter_codigo_em_python_pontos_flutuantes
+
+- story: codigo_em_python_pontos_flutuantes2
+  steps:
+  - intent: codigo_em_python_pontos_flutuantes
+
+  - action: utter_codigo_em_python_pontos_flutuantes
+  - intent: sobre_caracteres
+
+  - action: utter_sobre_caracteres
+
+- story: codigo_em_python_caracteres
+  steps:
+  - intent: codigo_em_python_caracteres
+
+  - action: utter_codigo_em_python_caracteres
+
+- story: codigo_em_python_caracteres2
+  steps:
+  - intent: codigo_em_python_caracteres
+
+  - action: utter_codigo_em_python_caracteres
+  - intent: sobre_booleanos
+
+  - action: utter_sobre_booleanos
+
+- story: codigo_em_python_booleanos
+  steps:
+  - intent: codigo_em_python_booleanos
+
+  - action: utter_codigo_em_python_booleanos
+
+- story: codigo_em_python_booleanos2
+  steps:
+  - intent: codigo_em_python_booleanos
+
+  - action: utter_codigo_em_python_booleanos
+  - intent: sobre_strings
+
+  - action: utter_sobre_strings
+
+- story: codigo_em_python_strings
+  steps:
+  - intent: codigo_em_python_strings
+
+  - action: utter_codigo_em_python_strings
+
+- story: codigo_em_python_strings2
+  steps:
+  - intent: codigo_em_python_strings
+
+  - action: utter_codigo_em_python_strings
+  - intent: exercicios_variaveis
+
+  - action: utter_exercicios_variaveis
+
+
+- story: codigo_em_python_condicionais
+  steps:
+  - intent: codigo_em_python_condicionais
+
+  - action: utter_codigo_em_python_condicionais
+
+- story: codigo_em_python_condicionais2
+  steps:
+  - intent: codigo_em_python_condicionais
+
+  - action: utter_codigo_em_python_condicionais
+  - intent: exercicios_condicionais
+
+  - action: utter_exercicios_condicionais
+
+- story: codigo_em_python_condicionais3
+  steps:
+  - intent: codigo_em_python_condicionais
+
+  - action: utter_codigo_em_python_condicionais
+  - intent: exercicios_vaga
+  - action: utter_exercicios_vaga
+
+
+- story: codigo_em_python_repeticao
+  steps:
+  - intent: codigo_em_python_repeticao
+
+  - action: utter_codigo_em_python_repeticao
+
+- story: codigo_em_python_repeticao2
+  steps:
+  - intent: codigo_em_python_repeticao
+
+  - action: utter_codigo_em_python_repeticao
+  - intent: exercicios_repeticao
+
+  - action: utter_exercicios_repeticao
+
+- story: codigo_em_python_repeticao3
+  steps:
+  - intent: codigo_em_python_repeticao
+
+  - action: utter_codigo_em_python_repeticao
+  - intent: exercicios_vaga
+  - action: utter_exercicios_vaga
+
+
+- story: codigo_em_python_vetores
+  steps:
+  - intent: codigo_em_python_vetores
+
+  - action: utter_codigo_em_python_vetores
+
+- story: codigo_em_python_vetores2
+  steps:
+  - intent: codigo_em_python_vetores
+
+  - action: utter_codigo_em_python_vetores
+  - intent: exercicios_vetores
+
+  - action: utter_exercicios_vetores
+
+- story: codigo_em_python_vetores3
+  steps:
+  - intent: codigo_em_python_vetores
+
+  - action: utter_codigo_em_python_vetores
+  - intent: exercicios_vaga
+  - action: utter_exercicios_vaga
+
+
+- story: codigo_em_python_matrizes
+  steps:
+  - intent: codigo_em_python_matrizes
+
+  - action: utter_codigo_em_python_matrizes
+
+- story: codigo_em_python_matrizes2
+  steps:
+  - intent: codigo_em_python_matrizes
+
+  - action: utter_codigo_em_python_matrizes
+  - intent: exercicios_matrizes
+
+  - action: utter_exercicios_matrizes
+
+- story: codigo_em_python_matrizes3
+  steps:
+  - intent: codigo_em_python_matrizes
+
+  - action: utter_codigo_em_python_matrizes
+  - intent: exercicios_vaga
+  - action: utter_exercicios_vaga
+
+
+- story: codigo_em_python_funcao
+  steps:
+  - intent: codigo_em_python_funcao
+
+  - action: utter_codigo_em_python_funcao
+
+- story: codigo_em_python_funcao2
+  steps:
+  - intent: codigo_em_python_funcao
+
+  - action: utter_codigo_em_python_funcao
+  - intent: exercicios_funcao
+
+  - action: utter_exercicios_funcao
+
+- story: codigo_em_python_funcao3
+  steps:
+  - intent: codigo_em_python_funcao
+
+  - action: utter_codigo_em_python_funcao
+  - intent: exercicios_vaga
+  - action: utter_exercicios_vaga
+
+
+- story: codigo_em_python_arquivos
+  steps:
+  - intent: codigo_em_python_arquivos
+
+  - action: utter_codigo_em_python_arquivos
+
+- story: codigo_em_python_arquivos2
+  steps:
+  - intent: codigo_em_python_arquivos
+
+  - action: utter_codigo_em_python_arquivos
+  - intent: exercicios_arquivos
+
+  - action: utter_exercicios_arquivos
+
+- story: codigo_em_python_arquivos3
+  steps:
+  - intent: codigo_em_python_arquivos
+
+  - action: utter_codigo_em_python_arquivos
+  - intent: exercicios_vaga
+  - action: utter_exercicios_vaga
+
+
+- story: codigo_em_python_importar_bibliotecas
+  steps:
+  - intent: codigo_em_python_importar_bibliotecas
+
+  - action: utter_codigo_em_python_importar_bibliotecas
+
+- story: codigo_em_python_importar_bibliotecas2
+  steps:
+  - intent: codigo_em_python_importar_bibliotecas
+
+  - action: utter_codigo_em_python_importar_bibliotecas
+  - intent: sobre_funcao
+
+  - action: utter_sobre_funcao
+
+
+- story: conteudo_extra_variaveis
+  steps:
+  - intent: conteudo_extra_variaveis
+
+  - action: utter_conteudo_extra_variaveis
+
+- story: conteudo_extra_variaveis2
+  steps:
+  - intent: conteudo_extra_variaveis
+
+  - action: utter_conteudo_extra_variaveis
+  - intent: desafio_variaveis
+
+  - action: utter_desafio_variaveis
+
+- story: conteudo_extra_variaveis3
+  steps:
+  - intent: conteudo_extra_variaveis
+
+  - action: utter_conteudo_extra_variaveis
+  - intent: desafio_vaga
+  - action: utter_desafio_vaga
+
+
+- story: conteudo_extra_condicionais
+  steps:
+  - intent: conteudo_extra_condicionais
+
+  - action: utter_conteudo_extra_condicionais
+
+- story: conteudo_extra_condicionais2
+  steps:
+  - intent: conteudo_extra_condicionais
+
+  - action: utter_conteudo_extra_condicionais
+  - intent: desafio_condicionais
+
+  - action: utter_desafio_condicionais
+
+- story: conteudo_extra_condicionais3
+  steps:
+  - intent: conteudo_extra_condicionais
+
+  - action: utter_conteudo_extra_condicionais
+  - intent: desafio_vaga
+  - action: utter_desafio_vaga
+
+
+- story: conteudo_extra_repeticao
+  steps:
+  - intent: conteudo_extra_repeticao
+
+  - action: utter_conteudo_extra_repeticao
+
+- story: conteudo_extra_repeticao2
+  steps:
+  - intent: conteudo_extra_repeticao
+
+  - action: utter_conteudo_extra_repeticao
+  - intent: desafio_repeticao
+
+  - action: utter_desafio_repeticao
+
+- story: conteudo_extra_repeticao3
+  steps:
+  - intent: conteudo_extra_repeticao
+
+  - action: utter_conteudo_extra_repeticao
+  - intent: desafio_vaga
+  - action: utter_desafio_vaga
+
+
+- story: conteudo_extra_vetores
+  steps:
+  - intent: conteudo_extra_vetores
+
+  - action: utter_conteudo_extra_vetores
+
+- story: conteudo_extra_vetores2
+  steps:
+  - intent: conteudo_extra_vetores
+
+  - action: utter_conteudo_extra_vetores
+  - intent: desafio_vetores
+
+  - action: utter_desafio_vetores
+
+- story: conteudo_extra_vetores3
+  steps:
+  - intent: conteudo_extra_vetores
+
+  - action: utter_conteudo_extra_vetores
+  - intent: desafio_vaga
+  - action: utter_desafio_vaga
+
+
+- story: conteudo_extra_matrizes
+  steps:
+  - intent: conteudo_extra_matrizes
+
+  - action: utter_conteudo_extra_matrizes
+
+- story: conteudo_extra_matrizes2
+  steps:
+  - intent: conteudo_extra_matrizes
+
+  - action: utter_conteudo_extra_matrizes
+  - intent: desafio_matrizes
+
+  - action: utter_desafio_matrizes
+
+- story: conteudo_extra_matrizes3
+  steps:
+  - intent: conteudo_extra_matrizes
+
+  - action: utter_conteudo_extra_matrizes
+  - intent: desafio_vaga
+  - action: utter_desafio_vaga
+   
+
+- story: conteudo_extra_strings
+  steps:
+  - intent: conteudo_extra_strings
+  - action: utter_conteudo_extra_strings
+
+- story: conteudo_extra_strings2
+  steps:
+  - intent: conteudo_extra_strings
+  - action: utter_conteudo_extra_strings
+  - intent: sobre_importar_bibliotecas
+
+  - action: utter_sobre_importar_bibliotecas
+
+
+- story: conteudo_extra_funcao
+  steps:
+  - intent: conteudo_extra_funcao
+
+  - action: utter_conteudo_extra_funcao
+
+- story: conteudo_extra_funcao2
+  steps:
+  - intent: conteudo_extra_funcao
+
+  - action: utter_conteudo_extra_funcao
+  - intent: desafio_funcao
+
+  - action: utter_desafio_funcao
+
+- story: conteudo_extra_funcao3
+  steps:
+  - intent: conteudo_extra_funcao
+
+  - action: utter_conteudo_extra_funcao
+  - intent: desafio_vaga
+  - action: utter_desafio_vaga
+
+
+- story: conteudo_extra_arquivos
+  steps:
+  - intent: conteudo_extra_arquivos
+
+  - action: utter_conteudo_extra_arquivos
+
+- story: conteudo_extra_arquivos2
+  steps:
+  - intent: conteudo_extra_arquivos
+
+  - action: utter_conteudo_extra_arquivos
+  - intent: sobre_stack_overflow
+  - action: utter_sobre_stack_overflow
+
+
+- story: desafio_hello_world
+  steps:
+  - intent: desafio_hello_world
+
+  - action: utter_desafio_hello_world
+
+- story: desafio_hello_world2
+  steps:
+  - intent: desafio_hello_world
+
+  - action: utter_desafio_hello_world
+
+
+- story: desafio_hello_world3
+  steps:
+  - intent: desafio_hello_world
+
+  - action: utter_desafio_hello_world
+  - intent: sobre_condicionais
+
+  - action: utter_sobre_condicionais
+
+- story: desafio_input_dados
+  steps:
+  - intent: desafio_input_dados
+
+  - action: utter_desafio_input_dados
+
+- story: desafio_input_dados2
+  steps:
+  - intent: desafio_input_dados
+
+  - action: utter_desafio_input_dados
+  - intent: codigo_em_python_input_dados
+
+  - action: utter_codigo_em_python_input_dados
+
+
+- story: desafio_variaveis
+  steps:
+  - intent: desafio_variaveis
+
+  - action: utter_desafio_variaveis
+
+- story: desafio_variaveis2
+  steps:
+  - intent: desafio_variaveis
+
+  - action: utter_desafio_variaveis
+
+- story: desafio_variaveis3
+  steps:
+  - intent: desafio_variaveis
+
+  - action: utter_desafio_variaveis
+  - intent: sobre_condicionais
+
+  - action: utter_sobre_condicionais
+
+
+- story: desafio_condicionais
+  steps:
+  - intent: desafio_condicionais
+
+  - action: utter_desafio_condicionais
+
+- story: desafio_condicionais2
+  steps:
+  - intent: desafio_condicionais
+
+  - action: utter_desafio_condicionais
+
+- story: desafio_condicionais3
+  steps:
+  - intent: desafio_condicionais
+
+  - action: utter_desafio_condicionais
+  - intent: sobre_repeticao
+
+  - action: utter_sobre_repeticao
+
+
+- story: desafio_repeticao
+  steps:
+  - intent: desafio_repeticao
+
+  - action: utter_desafio_repeticao
+
+- story: desafio_repeticao2
+  steps:
+  - intent: desafio_repeticao
+
+  - action: utter_desafio_repeticao
+
+- story: desafio_repeticao3
+  steps:
+  - intent: desafio_repeticao
+
+  - action: utter_desafio_repeticao
+  - intent: sobre_vetores
+
+  - action: utter_sobre_vetores
+
+
+- story: desafio_vetores
+  steps:
+  - intent: desafio_vetores
+
+  - action: utter_desafio_vetores
+
+- story: desafio_vetores2
+  steps:
+  - intent: desafio_vetores
+
+  - action: utter_desafio_vetores
+
+- story: desafio_vetores3
+  steps:
+  - intent: desafio_vetores
+
+  - action: utter_desafio_vetores
+  - intent: sobre_matrizes
+
+  - action: utter_sobre_matrizes
+
+
+- story: desafio_matrizes
+  steps:
+  - intent: desafio_matrizes
+
+  - action: utter_desafio_matrizes
+
+- story: desafio_matrizes2
+  steps:
+  - intent: desafio_matrizes
+
+  - action: utter_desafio_matrizes
+
+- story: desafio_matrizes3
+  steps:
+  - intent: desafio_matrizes
+
+  - action: utter_desafio_matrizes
+  - intent: sobre_importar_bibliotecas
+
+  - action: utter_sobre_importar_bibliotecas
+
+
+- story: desafio_funcao
+  steps:
+  - intent: desafio_funcao
+
+  - action: utter_desafio_funcao
+
+- story: desafio_funcao2
+  steps:
+  - intent: desafio_funcao
+
+  - action: utter_desafio_funcao
+
+- story: desafio_funcao3
+  steps:
+  - intent: desafio_funcao
+
+  - action: utter_desafio_funcao
+  - intent: sobre_arquivos
+
+  - action: utter_sobre_arquivos
+
+
+- story: exemplo_variaveis
+  steps:
+  - intent: exemplo_variaveis
+
+  - action: utter_exemplo_variaveis
+
+- story: exemplo_variaveis2
+  steps:
+  - intent: exemplo_variaveis
+
+  - action: utter_exemplo_variaveis
+  - intent: codigo_em_python_variaveis
+
+  - action: utter_codigo_em_python_variaveis
+
+- story: exemplo_variaveis3
+  steps:
+  - intent: exemplo_variaveis
+
+  - action: utter_exemplo_variaveis
+  - intent: codigo_em_python_vaga
+  - action: utter_codigo_em_python_vaga
+
+- story: exemplo_inteiros
+  steps:
+  - intent: exemplo_inteiros
+
+  - action: utter_exemplo_inteiros
+
+- story: exemplo_inteiros2
+  steps:
+  - intent: exemplo_inteiros
+
+  - action: utter_exemplo_inteiros
+  - intent: codigo_em_python_inteiros
+
+  - action: utter_codigo_em_python_inteiros
+
+- story: exemplo_inteiros3
+  steps:
+  - intent: exemplo_inteiros
+
+  - action: utter_exemplo_inteiros
+  - intent: codigo_em_python_vaga
+  - action: utter_codigo_em_python_vaga
+
+- story: exemplo_pontos_flutuantes
+  steps:
+  - intent: exemplo_pontos_flutuantes
+
+  - action: utter_exemplo_pontos_flutuantes
+
+- story: exemplo_pontos_flutuantes2
+  steps:
+  - intent: exemplo_pontos_flutuantes
+
+  - action: utter_exemplo_pontos_flutuantes
+  - intent: codigo_em_python_pontos_flutuantes
+
+  - action: utter_codigo_em_python_pontos_flutuantes
+
+- story: exemplo_pontos_flutuantes3
+  steps:
+  - intent: exemplo_pontos_flutuantes
+
+  - action: utter_exemplo_pontos_flutuantes
+  - intent: codigo_em_python_vaga
+  - action: utter_codigo_em_python_vaga
+
+- story: exemplo_caracteres
+  steps:
+  - intent: exemplo_caracteres
+
+  - action: utter_exemplo_caracteres
+
+- story: exemplo_caracteres2
+  steps:
+  - intent: exemplo_caracteres
+
+  - action: utter_exemplo_caracteres
+  - intent: codigo_em_python_caracteres
+
+  - action: utter_codigo_em_python_caracteres
+
+- story: exemplo_caracteres3
+  steps:
+  - intent: exemplo_caracteres
+
+  - action: utter_exemplo_caracteres
+  - intent: codigo_em_python_vaga
+  - action: utter_codigo_em_python_vaga
+
+- story: exemplo_booleanos
+  steps:
+  - intent: exemplo_booleanos
+
+  - action: utter_exemplo_booleanos
+
+- story: exemplo_booleanos2
+  steps:
+  - intent: exemplo_booleanos
+
+  - action: utter_exemplo_booleanos
+  - intent: codigo_em_python_booleanos
+
+  - action: utter_codigo_em_python_booleanos
+
+- story: exemplo_booleanos3
+  steps:
+  - intent: exemplo_booleanos
+
+  - action: utter_exemplo_booleanos
+  - intent: codigo_em_python_vaga
+  - action: utter_codigo_em_python_vaga
+
+- story: exemplo_strings
+  steps:
+  - intent: exemplo_strings
+
+  - action: utter_exemplo_strings
+
+- story: exemplo_strings2
+  steps:
+  - intent: exemplo_strings
+
+  - action: utter_exemplo_strings
+  - intent: codigo_em_python_strings
+
+  - action: utter_codigo_em_python_strings
+
+- story: exemplo_strings3
+  steps:
+  - intent: exemplo_strings
+
+  - action: utter_exemplo_strings
+  - intent: codigo_em_python_vaga
+  - action: utter_codigo_em_python_vaga
+
+
+- story: exemplo_condicionais
+  steps:
+  - intent: exemplo_condicionais
+
+  - action: utter_exemplo_condicionais
+
+- story: exemplo_condicionais2
+  steps:
+  - intent: exemplo_condicionais
+
+  - action: utter_exemplo_condicionais
+  - intent: codigo_em_python_condicionais
+
+  - action: utter_codigo_em_python_condicionais
+
+- story: exemplo_condicionais3
+  steps:
+  - intent: exemplo_condicionais
+
+  - action: utter_exemplo_condicionais
+  - intent: codigo_em_python_vaga
+  - action: utter_codigo_em_python_vaga
+
+
+- story: exemplo_repeticao
+  steps:
+  - intent: exemplo_repeticao
+
+  - action: utter_exemplo_repeticao
+
+- story: exemplo_repeticao2
+  steps:
+  - intent: exemplo_repeticao
+
+  - action: utter_exemplo_repeticao
+  - intent: codigo_em_python_repeticao
+
+  - action: utter_codigo_em_python_repeticao
+
+- story: exemplo_repeticao3
+  steps:
+  - intent: exemplo_repeticao
+
+  - action: utter_exemplo_repeticao
+  - intent: codigo_em_python_vaga
+  - action: utter_codigo_em_python_vaga
+
+
+- story: exemplo_vetores
+  steps:
+  - intent: exemplo_vetores
+
+  - action: utter_exemplo_vetores
+
+- story: exemplo_vetores2
+  steps:
+  - intent: exemplo_vetores
+
+  - action: utter_exemplo_vetores
+  - intent: codigo_em_python_vetores
+
+  - action: utter_codigo_em_python_vetores
+
+- story: exemplo_vetores3
+  steps:
+  - intent: exemplo_vetores
+
+  - action: utter_exemplo_vetores
+  - intent: codigo_em_python_vaga
+  - action: utter_codigo_em_python_vaga
+
+- story: exemplo_matrizes
+  steps:
+  - intent: exemplo_matrizes
+
+  - action: utter_exemplo_matrizes
+
+- story: exemplo_matrizes2
+  steps:
+  - intent: exemplo_matrizes
+
+  - action: utter_exemplo_matrizes
+  - intent: codigo_em_python_matrizes
+
+  - action: utter_codigo_em_python_matrizes
+
+- story: exemplo_matrizes3
+  steps:
+  - intent: exemplo_matrizes
+
+  - action: utter_exemplo_matrizes
+  - intent: codigo_em_python_vaga
+  - action: utter_codigo_em_python_vaga
+
+
+- story: exemplo_importar_bibliotecas
+  steps:
+  - intent: exemplo_importar_bibliotecas
+
+  - action: utter_exemplo_importar_bibliotecas
+
+- story: exemplo_importar_bibliotecas2
+  steps:
+  - intent: exemplo_importar_bibliotecas
+
+  - action: utter_exemplo_importar_bibliotecas
+  - intent: codigo_em_python_importar_bibliotecas
+
+  - action: utter_codigo_em_python_importar_bibliotecas
+
+- story: exemplo_importar_bibliotecas3
+  steps:
+  - intent: exemplo_importar_bibliotecas
+
+  - action: utter_exemplo_importar_bibliotecas
+  - intent: codigo_em_python_vaga
+  - action: utter_codigo_em_python_vaga
+
+
+- story: exemplo_funcao
+  steps:
+  - intent: exemplo_funcao
+
+  - action: utter_exemplo_funcao
+
+- story: exemplo_funcao2
+  steps:
+  - intent: exemplo_funcao
+
+  - action: utter_exemplo_funcao
+  - intent: codigo_em_python_funcao
+
+  - action: utter_codigo_em_python_funcao
+
+- story: exemplo_funcao3
+  steps:
+  - intent: exemplo_funcao
+
+  - action: utter_exemplo_funcao
+  - intent: codigo_em_python_vaga
+  - action: utter_codigo_em_python_vaga
+
+
+- story: exemplo_arquivos
+  steps:
+  - intent: exemplo_arquivos
+
+  - action: utter_exemplo_arquivos
+
+- story: exemplo_arquivos2
+  steps:
+  - intent: exemplo_arquivos
+
+  - action: utter_exemplo_arquivos
+  - intent: codigo_em_python_arquivos
+
+  - action: utter_codigo_em_python_arquivos
+
+- story: exemplo_arquivos3
+  steps:
+  - intent: exemplo_arquivos
+
+  - action: utter_exemplo_arquivos
+  - intent: codigo_em_python_vaga
+  - action: utter_codigo_em_python_vaga
+
+
+- story: exercicios_variaveis
+  steps:
+  - intent: exercicios_variaveis
+
+  - action: utter_exercicios_variaveis
+
+- story: exercicios_variaveis2
+  steps:
+  - intent: exercicios_variaveis
+
+  - action: utter_exercicios_variaveis
+  - intent: conteudo_extra_variaveis
+
+  - action: utter_conteudo_extra_variaveis
+
+- story: exercicios_variaveis3
+  steps:
+  - intent: exercicios_variaveis
+
+  - action: utter_exercicios_variaveis
+  - intent: conteudo_extra_vaga
+  - action: utter_conteudo_extra_vaga
+
+
+- story: exercicios_condicionais
+  steps:
+  - intent: exercicios_condicionais
+
+  - action: utter_exercicios_condicionais
+
+- story: exercicios_condicionais2
+  steps:
+  - intent: exercicios_condicionais
+
+  - action: utter_exercicios_condicionais
+  - intent: conteudo_extra_condicionais
+
+  - action: utter_conteudo_extra_condicionais
+
+- story: exercicios_condicionais3
+  steps:
+  - intent: exercicios_condicionais
+
+  - action: utter_exercicios_condicionais
+  - intent: conteudo_extra_vaga
+  - action: utter_conteudo_extra_vaga
+
+
+- story: exercicios_repeticao
+  steps:
+  - intent: exercicios_repeticao
+
+  - action: utter_exercicios_repeticao
+
+- story: exercicios_repeticao2
+  steps:
+  - intent: exercicios_repeticao
+
+  - action: utter_exercicios_repeticao
+  - intent: conteudo_extra_repeticao
+
+  - action: utter_conteudo_extra_repeticao
+
+- story: exercicios_repeticao3
+  steps:
+  - intent: exercicios_repeticao
+
+  - action: utter_exercicios_repeticao
+  - intent: conteudo_extra_vaga
+  - action: utter_conteudo_extra_vaga
+
+- story: exercicios_vetores
+  steps:
+  - intent: exercicios_vetores
+
+  - action: utter_exercicios_vetores
+
+- story: exercicios_vetores2
+  steps:
+  - intent: exercicios_vetores
+
+  - action: utter_exercicios_vetores
+  - intent: conteudo_extra_vetores
+
+  - action: utter_conteudo_extra_vetores
+
+- story: exercicios_vetores3
+  steps:
+  - intent: exercicios_vetores
+
+  - action: utter_exercicios_vetores
+  - intent: conteudo_extra_vaga
+  - action: utter_conteudo_extra_vaga
+
+
+- story: exercicios_strings
+  steps:
+  - intent: exercicios_strings
+
+  - action: utter_exercicios_strings
+  
+- story: exercicios_strings2
+  steps:
+  - intent: exercicios_strings
+
+  - action: utter_exercicios_strings
+  - intent: conteudo_extra_strings
+
+  - action: utter_conteudo_extra_strings 
+
+- story: exercicios_strings3
+  steps:
+  - intent: exercicios_strings
+
+  - action: utter_exercicios_strings
+  - intent: conteudo_extra_vaga
+  - action: utter_conteudo_extra_vaga
+
+
+- story: exercicios_matrizes
+  steps:
+  - intent: exercicios_matrizes
+
+  - action: utter_exercicios_matrizes
+
+- story: exercicios_matrizes2
+  steps:
+  - intent: exercicios_matrizes
+
+  - action: utter_exercicios_matrizes
+  - intent: conteudo_extra_matrizes
+
+  - action: utter_conteudo_extra_matrizes
+    
+- story: exercicios_matrizes3
+  steps:
+  - intent: exercicios_matrizes
+
+  - action: utter_exercicios_matrizes
+  - intent: conteudo_extra_vaga
+  - action: utter_conteudo_extra_vaga
+
+
+- story: exercicios_funcao
+  steps:
+  - intent: exercicios_funcao
+
+  - action: utter_exercicios_funcao
+
+- story: exercicios_funcao2
+  steps:
+  - intent: exercicios_funcao
+
+  - action: utter_exercicios_funcao
+  - intent: conteudo_extra_funcao
+
+  - action: utter_conteudo_extra_funcao
+    
+- story: exercicios_funcao3
+  steps:
+  - intent: exercicios_funcao
+
+  - action: utter_exercicios_funcao
+  - intent: conteudo_extra_vaga
+  - action: utter_conteudo_extra_vaga
+
+
+- story: exercicios_arquivos
+  steps:
+  - intent: exercicios_arquivos
+
+  - action: utter_exercicios_arquivos
+
+- story: exercicios_arquivos2
+  steps:
+  - intent: exercicios_arquivos
+
+  - action: utter_exercicios_arquivos
+  - intent: conteudo_extra_arquivos
+
+  - action: utter_conteudo_extra_arquivos
+    
+- story: exercicios_arquivos3
+  steps:
+  - intent: exercicios_arquivos
+
+  - action: utter_exercicios_arquivos
+  - intent: conteudo_extra_vaga
+  - action: utter_conteudo_extra_vaga
+
+  
+    
+- story: full_path_variaveis
+  steps:
+  - intent: sobre_variaveis
+
+  - action: utter_sobre_variaveis
+  - intent: exemplo_variaveis
+
+  - action: utter_exemplo_variaveis
+  - intent: codigo_em_python_variaveis
+
+  - action: utter_codigo_em_python_variaveis
+  - intent: sobre_inteiros
+
+  - action: utter_sobre_inteiros
+  - intent: exemplo_inteiros
+
+  - action: utter_exemplo_inteiros
+  - intent: codigo_em_python_inteiros
+
+  - action: utter_codigo_em_python_inteiros
+  - intent: sobre_pontos_flutuantes
+
+  - action: utter_sobre_pontos_flutuantes
+  - intent: exemplo_pontos_flutuantes
+
+  - action: utter_exemplo_pontos_flutuantes
+  - intent: codigo_em_python_pontos_flutuantes
+
+  - action: utter_codigo_em_python_pontos_flutuantes
+  - intent: sobre_caracteres
+
+  - action: utter_sobre_caracteres
+  - intent: exemplo_caracteres
+
+  - action: utter_exemplo_caracteres
+  - intent: codigo_em_python_caracteres
+
+  - action: utter_codigo_em_python_caracteres
+  - intent: sobre_booleanos
+
+  - action: utter_sobre_booleanos
+  - intent: exemplo_booleanos
+
+  - action: utter_exemplo_booleanos
+  - intent: codigo_em_python_booleanos
+
+  - action: utter_codigo_em_python_booleanos
+  - intent: sobre_strings
+
+  - action: utter_sobre_strings
+  - intent: exemplo_strings
+
+  - action: utter_exemplo_strings
+  - intent: codigo_em_python_strings
+
+  - action: utter_codigo_em_python_strings
+  - intent: exercicios_variaveis
+
+  - action: utter_exercicios_variaveis
+  - intent: conteudo_extra_variaveis
+
+  - action: utter_conteudo_extra_variaveis
+  - intent: manter_conversa
+  - action: utter_manter_conversa
+
+- story: full_path_variaveis_vaga
+  steps:
+  - intent: sobre_variaveis
+
+  - action: utter_sobre_variaveis
+  - intent: exemplo_vaga
+  - action: utter_exemplo_vaga
+  - intent: codigo_em_python_vaga
+  - action: utter_codigo_em_python_vaga
+  - intent: exercicios_vaga
+  - action: utter_exercicios_vaga
+  - intent: conteudo_extra_vaga
+  - action: utter_conteudo_extra_vaga
+  - intent: manter_conversa
+  - action: utter_manter_conversa
+
+
+- story: full_path_condicionais
+  steps:
+  - intent: sobre_condicionais
+
+  - action: utter_sobre_condicionais
+  - intent: exemplo_condicionais
+
+  - action: utter_exemplo_condicionais
+  - intent: codigo_em_python_condicionais
+
+  - action: utter_codigo_em_python_condicionais
+  - intent: exercicios_condicionais
+
+  - action: utter_exercicios_condicionais
+  - intent: conteudo_extra_condicionais
+
+  - action: utter_conteudo_extra_condicionais
+  - intent: manter_conversa
+  - action: utter_manter_conversa
+
+- story: full_path_condicionais_vaga
+  steps:
+  - intent: sobre_condicionais
+
+  - action: utter_sobre_condicionais
+  - intent: exemplo_vaga
+  - action: utter_exemplo_vaga
+  - intent: codigo_em_python_vaga
+  - action: utter_codigo_em_python_vaga
+  - intent: exercicios_vaga
+  - action: utter_exercicios_vaga
+  - intent: conteudo_extra_vaga
+  - action: utter_conteudo_extra_vaga
+  - intent: manter_conversa
+  - action: utter_manter_conversa
+
+
+- story: full_path_repeticao
+  steps:
+  - intent: sobre_repeticao
+
+  - action: utter_sobre_repeticao
+  - intent: exemplo_repeticao
+
+  - action: utter_exemplo_repeticao
+  - intent: codigo_em_python_repeticao
+
+  - action: utter_codigo_em_python_repeticao
+  - intent: exercicios_repeticao
+
+  - action: utter_exercicios_repeticao
+  - intent: conteudo_extra_repeticao
+
+  - action: utter_conteudo_extra_repeticao
+  - intent: desafio_repeticao
+
+  - action: utter_desafio_repeticao
+  - intent: manter_conversa
+  - action: utter_manter_conversa
+
+- story: full_path_repeticao_vaga
+  steps:
+  - intent: sobre_repeticao
+
+  - action: utter_sobre_repeticao
+  - intent: exemplo_vaga
+  - action: utter_exemplo_vaga
+  - intent: codigo_em_python_vaga
+  - action: utter_codigo_em_python_vaga
+  - intent: exercicios_vaga
+  - action: utter_exercicios_vaga
+  - intent: conteudo_extra_vaga
+  - action: utter_conteudo_extra_vaga
+  - intent: desafio_vaga
+  - action: utter_desafio_vaga
+  - intent: manter_conversa
+  - action: utter_manter_conversa
+
+
+- story: full_path_vetores
+  steps:
+  - intent: sobre_vetores
+
+  - action: utter_sobre_vetores
+  - intent: exemplo_vetores
+
+  - action: utter_exemplo_vetores
+  - intent: codigo_em_python_vetores
+
+  - action: utter_codigo_em_python_vetores
+  - intent: exercicios_vetores
+
+  - action: utter_exercicios_vetores
+  - intent: conteudo_extra_vetores
+
+  - action: utter_conteudo_extra_vetores
+  - intent: desafio_vetores
+
+  - action: utter_desafio_vetores
+  - intent: manter_conversa
+  - action: utter_manter_conversa
+
+- story: full_path_vetores_vaga
+  steps:
+  - intent: sobre_vetores
+
+  - action: utter_sobre_vetores
+  - intent: exemplo_vaga
+  - action: utter_exemplo_vaga
+  - intent: codigo_em_python_vaga
+  - action: utter_codigo_em_python_vaga
+  - intent: exercicios_vaga
+  - action: utter_exercicios_vaga
+  - intent: conteudo_extra_vaga
+  - action: utter_conteudo_extra_vaga
+  - intent: desafio_vaga
+  - action: utter_desafio_vaga
+  - intent: manter_conversa
+  - action: utter_manter_conversa
+
+
+- story: full_path_matrizes
+  steps:
+  - intent: sobre_matrizes
+
+  - action: utter_sobre_matrizes
+  - intent: exemplo_matrizes
+
+  - action: utter_exemplo_matrizes
+  - intent: codigo_em_python_matrizes
+
+  - action: utter_codigo_em_python_matrizes
+  - intent: exercicios_matrizes
+
+  - action: utter_exercicios_matrizes
+  - intent: conteudo_extra_matrizes
+
+  - action: utter_conteudo_extra_matrizes
+  - intent: desafio_matrizes
+
+  - action: utter_desafio_matrizes
+  - intent: manter_conversa
+  - action: utter_manter_conversa
+
+- story: full_path_matrizes_vaga
+  steps:
+  - intent: sobre_matrizes
+
+  - action: utter_sobre_matrizes
+  - intent: exemplo_vaga
+  - action: utter_exemplo_vaga
+  - intent: codigo_em_python_vaga
+  - action: utter_codigo_em_python_vaga
+  - intent: exercicios_vaga
+  - action: utter_exercicios_vaga
+  - intent: conteudo_extra_vaga
+  - action: utter_conteudo_extra_vaga
+  - intent: desafio_vaga
+  - action: utter_desafio_vaga
+  - intent: manter_conversa
+  - action: utter_manter_conversa
+
+
+- story: full_path_funcao
+  steps:
+  - intent: sobre_funcao
+
+  - action: utter_sobre_funcao
+  - intent: exemplo_funcao
+
+  - action: utter_exemplo_funcao
+  - intent: codigo_em_python_funcao
+
+  - action: utter_codigo_em_python_funcao
+  - intent: exercicios_funcao
+
+  - action: utter_exercicios_funcao
+  - intent: conteudo_extra_funcao
+
+  - action: utter_conteudo_extra_funcao
+  - intent: desafio_funcao
+
+  - action: utter_desafio_funcao
+  - intent: manter_conversa
+  - action: utter_manter_conversa
+
+- story: full_path_funcao_vaga
+  steps:
+  - intent: sobre_funcao
+
+  - action: utter_sobre_funcao
+  - intent: exemplo_vaga
+  - action: utter_exemplo_vaga
+  - intent: codigo_em_python_vaga
+  - action: utter_codigo_em_python_vaga
+  - intent: exercicios_vaga
+  - action: utter_exercicios_vaga
+  - intent: conteudo_extra_vaga
+  - action: utter_conteudo_extra_vaga
+  - intent: desafio_vaga
+  - action: utter_desafio_vaga
+  - intent: manter_conversa
+  - action: utter_manter_conversa
+
+
+- story: full_path_arquivos
+  steps:
+  - intent: sobre_arquivos
+
+  - action: utter_sobre_arquivos
+  - intent: exemplo_arquivos
+
+  - action: utter_exemplo_arquivos
+  - intent: codigo_em_python_arquivos
+
+  - action: utter_codigo_em_python_arquivos
+  - intent: exercicios_arquivos
+
+  - action: utter_exercicios_arquivos
+  - intent: conteudo_extra_arquivos
+
+  - action: utter_conteudo_extra_arquivos
+  - intent: manter_conversa
+  - action: utter_manter_conversa
+
+- story: full_path_arquivos_vaga
+  steps:
+  - intent: sobre_arquivos
+
+  - action: utter_sobre_arquivos
+  - intent: exemplo_vaga
+  - action: utter_exemplo_vaga
+  - intent: codigo_em_python_vaga
+  - action: utter_codigo_em_python_vaga
+  - intent: exercicios_vaga
+  - action: utter_exercicios_vaga
+  - intent: conteudo_extra_vaga
+  - action: utter_conteudo_extra_vaga
+  - intent: manter_conversa
+  - action: utter_manter_conversa
+
+
+- story: path 1
+  steps:
+  - intent: start
+  - action: utter_start
+  - intent: menu_ajuda
+  - action: utter_menu_ajuda
+
+- story: path 2
+  steps:
+  - intent: help
+  - action: utter_help
+  - intent: menu_ajuda
+  - action: utter_menu_ajuda
+
+- story: path 3
   steps:
   - intent: cumprimentar
   - action: utter_cumprimentar
+
+- story: path 4 
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: help
+  - action: utter_help
+  
+- story: path 5
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: cronograma
+  - action: utter_cronograma
+
+- story: path 6
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: cronograma
+  - action: utter_cronograma
+  - intent: help
+  - action: utter_help
+  
+- story: path 7
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: help
+  - action: utter_help
+  - intent: cronograma
+  - action: utter_cronograma
+
+
+- story: Tudo Bem
+  steps:
+  - intent: tudo_bem
+  - action: utter_tudo_bem
+
 - story: Despedir
   steps:
   - intent: despedir
   - action: utter_despedir
-- story: path_religiao
-  steps:
-  - intent: religiao
-  - action: utter_religiao
-  - action: utter_continuar_conversa
-- story: path_time
-  steps:
-  - intent: time
-  - action: utter_time
-  - action: utter_continuar_conversa
-- story: path_genero
-  steps:
-  - intent: genero
-  - action: utter_genero
-  - action: utter_continuar_conversa
-- story: path_piada
-  steps:
-  - intent: piada
-  - action: utter_piada
-  - action: utter_continuar_conversa
-- story: path_license
-  steps:
-  - intent: license
-  - action: utter_license
-  - action: utter_continuar_conversa
-- story: path_onde_voce_mora
-  steps:
-  - intent: onde_voce_mora
-  - action: utter_onde_voce_mora
-  - action: utter_continuar_conversa
-- story: path_musica
-  steps:
-  - intent: musica
-  - action: utter_musica
-  - action: utter_continuar_conversa
-- story: path_comida
-  steps:
-  - intent: comida
-  - action: utter_comida
-  - action: utter_continuar_conversa
-- story: path_cor
-  steps:
-  - intent: cor
-  - action: utter_cor
-  - action: utter_continuar_conversa
-- story: path_relacionamento
-  steps:
-  - intent: relacionamento
-  - action: utter_relacionamento
-  - action: utter_continuar_conversa
-- story: path_signo
-  steps:
-  - intent: signo
-  - action: utter_signo
-  - action: utter_continuar_conversa
-- story: path_triste
-  steps:
-  - intent: triste
-  - action: utter_triste
-  - action: utter_continuar_conversa
-- story: path_historia
-  steps:
-  - intent: historia
-  - action: utter_historia
-  - action: utter_continuar_conversa
-- story: Tudo Bem Story
-  steps:
-  - intent: tudo_bem
-  - action: utter_tudo_bem
-- story: Oi Tudo Bem Story
+
+- story: Oi Tudo Bem
   steps:
   - intent: cumprimentar
   - action: utter_cumprimentar
   - intent: tudo_bem
   - action: utter_tudo_bem
-- story: Nao entendi
+
+- story: cumprimentar
   steps:
-  - intent: diga_mais
-  - action: utter_diga_mais
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: despedir
+  - action: utter_despedir
+
+- story: manter_conversa
+  steps:
+  - intent: manter_conversa
+  - action: utter_manter_conversa
+
 - story: fallback
   steps:
   - intent: out_of_scope
-  - action: utter_fallback
-- story: negar sem contexto
+  - action: utter_default
+
+
+- story: menu_ajuda
   steps:
-  - intent: negar
-  - action: utter_despedir
-- story: elogios
+  - intent: menu_ajuda
+  - action: utter_menu_ajuda
+
+- story: menu_ajuda2
   steps:
-  - intent: elogios
-  - action: utter_elogios
-  - action: utter_continuar_conversa
-- story: meajuda
+  - intent: menu_ajuda
+  - action: utter_menu_ajuda
+  - intent: manter_conversa
+  - action: utter_manter_conversa
+
+
+- story: curiosidades_python
   steps:
-  - intent: o_que_sei_falar
-  - action: utter_o_que_sei_falar
-- story: objetivo
+  - intent: curiosidades_python
+  - action: utter_curiosidades_python
+
+- story: curiosidades_python2
   steps:
-  - intent: objetivo
-  - action: utter_objetivo
-- story: path_feedback
+  - intent: curiosidades_python
+  - action: utter_curiosidades_python
+  - intent: manter_conversa
+  - action: utter_manter_conversa
+
+
+- story: assuntos_inapropriados
   steps:
-  - intent: feedback
-  - action: utter_feedback
-  - action: utter_continuar_conversa
+  - intent: assuntos_inapropriados
+  - action: utter_assuntos_inapropriados
+
+
+- story: sobre_programaçao
+  steps:
+  - intent: sobre_programaçao
+  - action: utter_sobre_programaçao
+
+- story: sobre_programaçao2
+  steps:
+  - intent: sobre_programaçao
+  - action: utter_sobre_programaçao
+  - intent: sobre_python
+  - action: utter_sobre_python
+
+
+- story: cronograma
+  steps:
+  - intent: cronograma
+  - action: utter_cronograma
+
+- story: cronograma2
+  steps:
+  - intent: cronograma
+  - action: utter_cronograma
+  - intent: sobre_python
+  - action: utter_sobre_python
+    
+
+- story: help
+  steps:
+  - intent: help
+  - action: utter_help
+
+- story: sobre_aix
+  steps:
+  - intent: sobre_aix
+  - action: utter_sobre_aix
+
+
+- story: sobre_stack_overflow_sem_pesquisa
+  steps:
+  - intent: sobre_stack_overflow
+  - action: utter_sobre_stack_overflow
+
+- story: sobre_stack_overflow_com_pesquisa
+  steps:
+  - intent: sobre_stack_overflow
+  - action: utter_sobre_stack_overflow
+  - intent: pesquisar
+  - action: utter_pesquisar
+
+
+- story: sobre_python
+  steps:
+  - intent: sobre_python
+  - action: utter_sobre_python
+
+- story: sobre_python2
+  steps:
+  - intent: sobre_python
+  - action: utter_sobre_python
+  - intent: sobre_instalar_python
+  - action: utter_sobre_instalar_python
+
+- story: sobre_python3
+  steps:
+  - intent: sobre_python
+  - action: utter_sobre_python
+  - intent: curiosidades_python
+  - action: utter_curiosidades_python
+
+
+- story: sobre_instalar_python
+  steps:
+  - intent: sobre_instalar_python
+  - action: utter_sobre_instalar_python
+
+- story: sobre_instalar_python2
+  steps:
+  - intent: sobre_instalar_python
+  - action: utter_sobre_instalar_python
+  - intent: sobre_hello_world
+  - action: utter_sobre_hello_world
+
+- story: sobre_instalar_python3
+  steps:
+  - intent: sobre_instalar_python
+  - action: utter_sobre_instalar_python
+  - intent: curiosidades_python
+  - action: utter_curiosidades_python
+
+
+- story: sobre_hello_world
+  steps:
+  - intent: sobre_hello_world
+  - action: utter_sobre_hello_world
+
+- story: sobre_hello_world2
+  steps:
+  - intent: sobre_hello_world
+  - action: utter_sobre_hello_world
+  - intent: sobre_input_dados
+  - action: utter_sobre_input_dados
+
+
+- story: sobre_input_dados
+  steps:
+  - intent: sobre_input_dados
+  - action: utter_sobre_input_dados
+
+- story: sobre_input_dados2
+  steps:
+  - intent: sobre_input_dados
+  - action: utter_sobre_input_dados
+  - intent: desafio_input_dados
+  - action: utter_desafio_input_dados
+
+
+- story: sobre_variaveis
+  steps:
+  - intent: sobre_variaveis
+
+  - action: utter_sobre_variaveis
+
+- story: sobre_inteiros
+  steps:
+  - intent: sobre_inteiros
+
+  - action: utter_sobre_inteiros
+
+- story: sobre_pontos_flutuantes
+  steps:
+  - intent: sobre_pontos_flutuantes
+
+  - action: utter_sobre_pontos_flutuantes
+
+- story: sobre_caracteres
+  steps:
+  - intent: sobre_caracteres
+
+  - action: utter_sobre_caracteres
+
+- story: sobre_booleanos
+  steps:
+  - intent: sobre_booleanos
+
+  - action: utter_sobre_booleanos
+
+- story: sobre_strings
+  steps:
+  - intent: sobre_strings
+  - action: utter_sobre_strings
+
+- story: sobre_variaveis2
+  steps:
+  - intent: sobre_variaveis
+
+  - action: utter_sobre_variaveis
+  - intent: exemplo_variaveis
+
+  - action: utter_exemplo_variaveis
+
+- story: sobre_variaveis3
+  steps:
+  - intent: sobre_variaveis
+
+  - action: utter_sobre_variaveis
+  - intent: exemplo_vaga
+  - action: utter_exemplo_vaga
+
+- story: sobre_variaveis4
+  steps:
+  - intent: sobre_variaveis
+
+  - action: utter_sobre_variaveis
+  - intent: sobre_inteiros
+
+  - action: utter_sobre_inteiros
+  - intent: sobre_pontos_flutuantes
+
+  - action: utter_sobre_pontos_flutuantes
+  - intent: sobre_caracteres
+
+  - action: utter_sobre_caracteres
+  - intent: sobre_strings
+
+  - action: utter_sobre_strings
+  - intent: sobre_booleanos
+
+  - action: utter_sobre_booleanos
+
+
+- story: sobre_condicionais
+  steps:
+  - intent: sobre_condicionais
+
+  - action: utter_sobre_condicionais
+
+- story: sobre_condicionais2
+  steps:
+  - intent: sobre_condicionais
+
+  - action: utter_sobre_condicionais
+  - intent: exemplo_condicionais
+
+  - action: utter_exemplo_condicionais
+
+- story: sobre_condicionais3
+  steps:
+  - intent: sobre_condicionais
+
+  - action: utter_sobre_condicionais
+  - intent: exemplo_vaga
+  - action: utter_exemplo_vaga
+
+
+- story: sobre_repeticao
+  steps:
+  - intent: sobre_repeticao
+
+  - action: utter_sobre_repeticao
+
+- story: sobre_repeticao2
+  steps:
+  - intent: sobre_repeticao
+
+  - action: utter_sobre_repeticao
+  - intent: exemplo_repeticao
+
+  - action: utter_exemplo_repeticao
+
+- story: sobre_repeticao3
+  steps:  
+  - intent: sobre_repeticao
+
+  - action: utter_sobre_repeticao
+  - intent: exemplo_vaga
+  - action: utter_exemplo_vaga
+
+
+- story: sobre_vetores
+  steps:
+  - intent: sobre_vetores
+
+  - action: utter_sobre_vetores
+
+- story: sobre_vetores2
+  steps:
+  - intent: sobre_vetores
+
+  - action: utter_sobre_vetores
+  - intent: exemplo_vetores
+
+  - action: utter_exemplo_vetores
+
+- story: sobre_vetores3
+  steps:
+  - intent: sobre_vetores
+
+  - action: utter_sobre_vetores
+  - intent: exemplo_vaga
+  - action: utter_exemplo_vaga
+
+
+- story: sobre_matrizes
+  steps:
+  - intent: sobre_matrizes
+
+  - action: utter_sobre_matrizes
+
+- story: sobre_matrizes2
+  steps:
+  - intent: sobre_matrizes
+
+  - action: utter_sobre_matrizes
+  - intent: exemplo_matrizes
+
+  - action: utter_exemplo_matrizes
+
+- story: sobre_matrizes3
+  steps:
+  - intent: sobre_matrizes
+
+  - action: utter_sobre_matrizes
+  - intent: exemplo_vaga
+  - action: utter_exemplo_vaga
+
+
+- story: sobre_importar_bibliotecas
+  steps:
+  - intent: sobre_importar_bibliotecas
+
+  - action: utter_sobre_importar_bibliotecas
+
+- story: sobre_importar_bibliotecas2
+  steps:
+  - intent: sobre_importar_bibliotecas
+
+  - action: utter_sobre_importar_bibliotecas
+  - intent: exemplo_importar_bibliotecas
+
+  - action: utter_exemplo_importar_bibliotecas
+
+- story: sobre_importar_bibliotecas3
+  steps:
+  - intent: sobre_importar_bibliotecas
+
+  - action: utter_sobre_importar_bibliotecas
+  - intent: exemplo_vaga
+  - action: utter_exemplo_vaga
+
+
+- story: sobre_funcao
+  steps:
+  - intent: sobre_funcao
+
+  - action: utter_sobre_funcao
+
+- story: sobre_funcao2
+  steps:
+  - intent: sobre_funcao
+
+  - action: utter_sobre_funcao
+  - intent: exemplo_funcao
+
+  - action: utter_exemplo_funcao
+
+- story: sobre_funcao3
+  steps:
+  - intent: sobre_funcao
+
+  - action: utter_sobre_funcao
+  - intent: exemplo_vaga
+  - action: utter_exemplo_vaga
+
+
+- story: sobre_arquivos
+  steps:
+  - intent: sobre_arquivos
+
+  - action: utter_sobre_arquivos
+
+- story: sobre_arquivos2
+  steps:
+  - intent: sobre_arquivos
+
+  - action: utter_sobre_arquivos
+  - intent: exemplo_arquivos
+
+  - action: utter_exemplo_arquivos
+
+- story: sobre_arquivos3
+  steps:
+  - intent: sobre_arquivos
+
+  - action: utter_sobre_arquivos
+  - intent: exemplo_vaga
+  - action: utter_exemplo_vaga
+
+- story: sobre_aix1
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: sobre_aix
+  - action: utter_sobre_aix
+
+- story: sobre_aix2
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: sobre_aix
+  - action: utter_sobre_aix
+  - intent: manter_conversa
+  - action: utter_manter_conversa
+
