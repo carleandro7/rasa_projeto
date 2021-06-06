@@ -10,6 +10,7 @@ O projeto tem como base os repositórios:
 ## Instalação do bot básico
 
 Entrar na pasta bot e execute os comandos:
+
 Treinar o bot
 ```sh
 make train
